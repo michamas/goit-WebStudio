@@ -1,3 +1,2 @@
 # goit-markup-hw-02
-moduł 2
-asdasd
+https://michamas.github.io/goit-markup-hw-02/
