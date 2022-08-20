@@ -1,0 +1,56 @@
+/* GENERAL CLASSES */
+:root {
+  --color-navy: #2f303a;
+  --color-background: #e5e5e5;
+  --color-lightgray: #f5f4fa;
+  --color-blue: #2196f3;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #000;
+  background: var(--color-background);
+  width: 1600px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* HEADER CLASSES */
+.nav-bar {
+  height: 200 px;
+  background: var(--color-white);
+}
+
+.nav-bar .logo {
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  padding: 25px 1240px 25px 215px;
+  display: inline-block; /* Wcześniej Webstudio nie odrywało sie od gornej krawedzi kartki */
+}
+
+.nav-bar .logo:visited {
+  color: #000;
+}
+.blue {
+  color: #2196f3;
+}
+.nav-list > li {
+  display: inline;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.nav-list a {
+  text-decoration: none;
+}
+.nav-list a:visited {
+  color: #000;
+}
+
+.head-bar {
+  height: 600px;
+  background: var(--color-navy);
+}
