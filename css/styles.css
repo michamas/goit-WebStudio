@@ -2,13 +2,15 @@
 :root {
   --color-navy: #2f303a;
   --color-background: #e5e5e5;
-  --color-lightgray: #f5f4fa;
+  --color-ash: #f5f4fa;
   --color-blue: #2196f3;
   --color-white: #ffffff;
+  --color-lightgray: #757575;
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
+  font-size: 14px;
   color: #000;
   background: var(--color-background);
   width: 1600px;
@@ -18,11 +20,11 @@ body {
 
 /* HEADER CLASSES */
 .nav-bar {
-  height: 200 px;
-  background: var(--color-white);
+  height: 80 px;
+  background: #fff;
 }
 
-.nav-bar .logo {
+.logo {
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
@@ -30,7 +32,7 @@ body {
   display: inline-block; /* Wcześniej Webstudio nie odrywało sie od gornej krawedzi kartki */
 }
 
-.nav-bar .logo:visited {
+.logo:visited {
   color: #000;
 }
 .blue {
@@ -46,11 +48,89 @@ body {
 .nav-list a {
   text-decoration: none;
 }
-.nav-list a:visited {
+.nav-list a:visited,
+.contact-links a:visited,
+.address-text a:visited {
+  color: #000;
+}
+.nav-list a:hover,
+.contact-links a:hover,
+.address-text a:hover {
+  color: var(--color-blue);
+}
+.contact-links a {
+  font-weight: 500;
+  text-decoration: none;
   color: #000;
 }
 
 .head-bar {
   height: 600px;
   background: var(--color-navy);
+}
+
+.head-title {
+  font-weight: 900;
+  font-size: 44px;
+  color: #ffffff;
+}
+
+.head-button {
+  color: #ffffff;
+  background-color: var(--color-blue);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h3 {
+  font-weight: 700;
+}
+.main-descritpion p {
+  color: var(--color-lightgray);
+  width: 270px;
+  height: 75px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.roboto-bold {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+.team-list {
+  color: var(--color-lightgray);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* FOOTER CLASSES */
+.foot-bar {
+  height: 252px;
+  background-color: var(--color-navy);
+}
+.address-text {
+  color: #fff;
+  font-style: normal;
+}
+.address-text a {
+  color: var(--color-lightgray);
+  text-decoration: none;
+}
+/* PORTFOLIO ADDITIONAL CLASSES */
+
+.portfolio-section figcaption {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-lightgray);
+}
+.roboto-bold-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
 }
