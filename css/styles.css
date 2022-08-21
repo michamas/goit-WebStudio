@@ -24,7 +24,7 @@ body {
 .navigation {
   height: 10 px;
 }
-.background {
+.page {
   background-color: var(--color-white);
 }
 
