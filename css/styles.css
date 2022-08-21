@@ -6,12 +6,14 @@
   --color-blue: #2196f3;
   --color-white: #ffffff;
   --color-lightgray: #757575;
+  --color-almostblack: #212121;
+  --color-black: #000000;
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
-  color: #000;
+  color: var(-color-black);
   background: var(--color-background);
   width: 1600px;
   justify-content: center;
@@ -19,9 +21,11 @@ body {
 }
 
 /* HEADER CLASSES */
-.nav-bar {
-  height: 80 px;
-  background: #fff;
+.navigation {
+  height: 10 px;
+}
+.background {
+  background-color: var(--color-white);
 }
 
 .logo {
@@ -33,104 +37,110 @@ body {
 }
 
 .logo:visited {
-  color: #000;
+  color: var(--color-black);
 }
-.blue {
-  color: #2196f3;
+.text-blue {
+  color: var(--color-blue);
 }
-.nav-list > li {
+.navigation-list {
   display: inline;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
-.nav-list a {
+.naviagation-link {
   text-decoration: none;
 }
-.nav-list a:visited,
-.contact-links a:visited,
-.address-text a:visited {
-  color: #000;
+.naviagation-link:visited,
+.contact-link:visited,
+.address-link:visited {
+  color: var(--color-black);
 }
-.nav-list a:hover,
-.contact-links a:hover,
-.address-text a:hover {
+.naviagation-link:hover,
+.contact-link:hover,
+.address-link:hover {
   color: var(--color-blue);
 }
-.contact-links a {
+.contact-link {
   font-weight: 500;
   text-decoration: none;
-  color: #000;
+  color: var(--color-black);
 }
 
-.head-bar {
+.main {
   height: 600px;
   background: var(--color-navy);
 }
 
-.head-title {
+.title {
   font-weight: 900;
   font-size: 44px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
-.head-button {
-  color: #ffffff;
+.main-button {
+  color: var(--color-white);
   background-color: var(--color-blue);
   font-weight: 700;
   font-size: 16px;
 }
-
-h3 {
+/* MAIN CLASSES */
+.primary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+.secondary-title {
   font-weight: 700;
 }
-.main-descritpion p {
+.secondary-paragraph {
   color: var(--color-lightgray);
   width: 270px;
   height: 75px;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-}
-
 .roboto-bold {
   font-weight: 500;
   font-size: 16px;
-  color: #000;
+  color: var(-color-black);
 }
 
-.team-list {
+.primary-list {
   color: var(--color-lightgray);
   font-weight: 400;
   font-size: 16px;
 }
 
 /* FOOTER CLASSES */
-.foot-bar {
+.footer {
   height: 252px;
   background-color: var(--color-navy);
 }
-.address-text {
-  color: #fff;
+.address-section {
+  color: var(--color-white);
   font-style: normal;
 }
-.address-text a {
+.address-link {
   color: var(--color-lightgray);
   text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
 }
+
 /* PORTFOLIO ADDITIONAL CLASSES */
 
-.portfolio-section figcaption {
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--color-lightgray);
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-lightgray);
 }
-.roboto-bold-portfolio {
+.portfolio-bold {
   font-weight: 700;
   font-size: 18px;
-  color: #000;
+  color: var(--color-black);
+}
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-almostblack);
 }
