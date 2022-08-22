@@ -23,7 +23,7 @@ body {
 
 /* HEADER CLASSES */
 .navigation {
-  height: 10 px;
+  height: 80 px;
 }
 .page {
   background-color: var(--color-white);
