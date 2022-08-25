@@ -15,17 +15,34 @@ body {
   font-size: 14px;
   color: var(-color-black);
   background: var(--color-background);
-  width: 1600px;
+  width: 1200px;
   justify-content: center;
   margin: 0 auto;
   letter-spacing: 0.02em;
 }
 
+ul {
+  list-style: none;
+}
+/* .overlay {
+  width: 100%;
+} */
+
+.text-blue {
+  color: var(--color-blue);
+}
+.text-white {
+  color: var(--color-white);
+}
 /* HEADER CLASSES */
 
-
-.page {
+.container {
   background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  padding: 24px 27px 25px 15px;
 }
 
 .logo {
@@ -34,40 +51,52 @@ body {
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding: 25px 1240px 25px 215px;
-  display: inline-block; /* Wcześniej Webstudio nie odrywało sie od gornej krawedzi kartki */
 }
 
 .logo:visited {
   color: var(--color-black);
 }
-.text-blue {
-  color: var(--color-blue);
+
+/* <!-- NAWIGACJA --> */
+
+.navigation-section {
+  padding: 0;
 }
-.navigation-list {
+.list-item {
   display: inline;
-  font-weight: 500;
-  font-size: 14px;
 }
-.naviagation-link {
+
+.navigation-section .list-item:nth-child(-n + 2) {
+  margin-right: 46px;
+}
+
+.navigation-link {
   text-decoration: none;
   line-height: 1.14;
+  font-weight: 500;
 }
-.naviagation-link:visited,
+.contact-section {
+  padding: 0;
+}
+.contact-link {
+  text-decoration: none;
+  line-height: 1.14;
+  font-weight: 500;
+  color: var(--color-black);
+  
+}
+.contact-section .list-item:nth-child(1) {
+  margin-right: 50px;
+}
+.navigation-link:visited,
 .contact-link:visited,
 .address-link:visited {
   color: var(--color-black);
 }
-.naviagation-link:hover,
+.navigation-link:hover,
 .contact-link:hover,
 .address-link:hover {
   color: var(--color-blue);
-}
-.contact-link {
-  font-weight: 500;
-  text-decoration: none;
-  line-height: 1.14;
-  color: var(--color-black);
 }
 
 .main {
@@ -120,7 +149,6 @@ body {
 
 .primary-list {
   color: var(--color-lightgray);
-  /* font-weight: 400; */
   font-size: 16px;
 }
 
@@ -137,7 +165,7 @@ body {
   color: var(--color-lightgray);
   text-decoration: none;
   line-height: 1.71;
-  font-size: 14px;
+  /* font-size: 14px; */
   letter-spacing: 0.03em;
 }
 
