@@ -39,7 +39,7 @@ ul {
 .container {
   background-color: var(--color-white);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   width: 1200px;
   padding: 24px 27px 25px 15px;
@@ -61,6 +61,9 @@ ul {
 
 .navigation-section {
   padding: 0;
+  margin-left: 93px;
+  margin-right: 371px;
+
 }
 .list-item {
   display: inline;
@@ -83,7 +86,6 @@ ul {
   line-height: 1.14;
   font-weight: 500;
   color: var(--color-black);
-  
 }
 .contact-section .list-item:nth-child(1) {
   margin-right: 50px;
@@ -99,6 +101,7 @@ ul {
   color: var(--color-blue);
 }
 
+/* MAIN CLASSES */
 .main {
   height: 600px;
   background: var(--color-navy);
@@ -121,7 +124,7 @@ ul {
   line-height: 1.76;
   cursor: pointer;
 }
-/* MAIN CLASSES */
+
 .primary-title {
   font-weight: 700;
   font-size: 36px;
