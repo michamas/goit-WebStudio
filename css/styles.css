@@ -24,9 +24,11 @@ body {
 ul {
   list-style: none;
 }
-/* .overlay {
+.overlay {
+  background-color: var(--color-white);
   width: 100%;
-} */
+  margin: 0 auto;
+}
 
 .text-blue {
   color: var(--color-blue);
@@ -34,13 +36,19 @@ ul {
 .text-white {
   color: var(--color-white);
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0px;
+}
 /* HEADER CLASSES */
 
-.container {
-  background-color: var(--color-white);
+.header {
   display: flex;
   align-items: center;
-  width: 1200px;
   height: 80px;
   /* padding: 24px 27px 25px 15px; */
 }
@@ -104,11 +112,20 @@ ul {
 }
 
 /* MAIN CLASSES */
-.main {
-  height: 600px;
+
+.top {
   background: var(--color-navy);
+  padding: 200px 252px 200px 252px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
 }
 
+h1 {
+  margin: 0 auto;
+}
 .title {
   font-weight: 900;
   font-size: 44px;
@@ -118,24 +135,74 @@ ul {
   color: var(--color-white);
 }
 
-.main-button {
+.top-button {
+  width: 200px;
+  height: 50px;
   color: var(--color-white);
   background-color: var(--color-blue);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.76;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .primary-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  margin: 0 0 50px 0;
+  text-align: center;
 }
+
+.primary-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.background-ash {
+  background: var(--color-ash);
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  color: var(--color-lightgray);
+  font-size: 16px;
+}
+
+.figure {
+  /* ??? */
+}
+.figcaption {
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.middle > li:nth-child(-n + 3) {
+  margin-right: 30px;
+}
+
 .secondary-title {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 10px;
 }
 .secondary-paragraph {
   color: var(--color-lightgray);
@@ -143,6 +210,7 @@ ul {
   height: 75px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .roboto-bold {
@@ -150,11 +218,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   color: var(--color-black);
-}
-
-.primary-list {
-  color: var(--color-lightgray);
-  font-size: 16px;
 }
 
 /* FOOTER CLASSES */
@@ -170,7 +233,6 @@ ul {
   color: var(--color-lightgray);
   text-decoration: none;
   line-height: 1.71;
-  /* font-size: 14px; */
   letter-spacing: 0.03em;
 }
 
