@@ -40,7 +40,6 @@ ul {
   background-color: var(--color-white);
   display: flex;
   align-items: center;
-  align-items: center;
   width: 1200px;
   height: 80px;
   /* padding: 24px 27px 25px 15px; */
@@ -52,6 +51,7 @@ ul {
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-left: 15px;
 }
 
 .logo:visited {
@@ -63,7 +63,7 @@ ul {
 .navigation-section {
   display: flex;
   justify-content: flex-start;
-  /* padding: 0; */
+  padding: 0;
   margin-left: 93px;
   margin-right: 371px;
 
