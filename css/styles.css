@@ -39,10 +39,11 @@ ul {
 .container {
   background-color: var(--color-white);
   display: flex;
-  /* justify-content: space-between; */
+  align-items: center;
   align-items: center;
   width: 1200px;
-  padding: 24px 27px 25px 15px;
+  height: 80px;
+  /* padding: 24px 27px 25px 15px; */
 }
 
 .logo {
@@ -60,7 +61,9 @@ ul {
 /* <!-- NAWIGACJA --> */
 
 .navigation-section {
-  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  /* padding: 0; */
   margin-left: 93px;
   margin-right: 371px;
 
