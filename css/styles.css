@@ -158,15 +158,16 @@ h1 {
   font-size: 16px;
 }
 
-.figure {
+.figure-team {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.figcaption {
+.figcaption-team {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-size: 16px;
   gap: 10px;
   padding: 30px 0;
   background: var(--color-white);
@@ -199,18 +200,12 @@ h1 {
   margin: 0;
 }
 
-.roboto-bold {
+.team-bold {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.19;
   color: var(--color-black);
-  /* padding-bottom: 20px; */
 }
-.roboto-team {
-  font-size: 16px;
-  line-height: 1.19;
-  margin-top: 10px;
-}
+
 /* FOOTER CLASSES */
 .footer {
   background-color: var(--color-navy);
@@ -233,16 +228,24 @@ h1 {
 
 /* PORTFOLIO ADDITIONAL CLASSES */
 
+.grid-border {
+  border: 1px solid #eeeeee;
+}
 .figcaption-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   font-size: 16px;
   color: var(--color-lightgray);
   letter-spacing: 0.03em;
   line-height: 1.88;
+  padding: 20px 24px;
 }
-.figcaption-bold {
+
+.grid-bold {
   font-weight: 700;
   font-size: 18px;
-  color: var(--color-black);
+  color: var(--color-almostblack);
   letter-spacing: 0.06em;
   line-height: 2;
 }
@@ -256,15 +259,21 @@ h1 {
   cursor: pointer;
   background-color: var(--color-ash);
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: none;
   border-radius: 4px;
+  border-color: var(--color-ash);
 }
 .button:hover {
   color: var(--color-white);
   background-color: var(--color-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .picture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 34px;
 }
 
 .button-list {
