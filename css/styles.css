@@ -19,7 +19,6 @@
   font-size: 14px;
   color: var(-color-black);
   background: var(--color-white);
-  /* width: 1200px; */
   justify-content: center;
   margin: 0 auto;
   letter-spacing: 0.02em;
@@ -28,11 +27,6 @@
 ul {
   list-style: none;
 }
-.overlay {
-  background-color: var(--color-white);
-  width: 100%;
-  margin: 0 auto;
-}
 
 .text-blue {
   color: var(--color-blue);
@@ -40,35 +34,21 @@ ul {
 .text-white {
   color: var(--color-white);
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-}
-.container-nav {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  height: 80px;
-  align-items: center;
-  padding: 0 27px 0 15px;
-  justify-content: space-between;
-}
-
-.navigation {
-  display: flex;
-}
-
-.section {
-  padding: 94px 0px;
+.background-ash {
+  background: var(--color-ash);
 }
 /* HEADER CLASSES */
 
-.header {
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container-navigation {
+  /* height: 80px; */
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 80px;
-  /* padding: 24px 27px 25px 15px; */
+  padding: 16px 27px 16px 15px;
 }
 
 .logo {
@@ -77,47 +57,26 @@ ul {
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 77px;
 }
 
 .logo:visited {
   color: var(--color-black);
 }
-
-/* <!-- NAWIGACJA --> */
-
-.navigation-section {
+.navigation {
   display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 32px 371px 32px 0px;
+  align-items: center;
+  margin-right: 331px;
 }
-.list-item {
-  display: inline;
-}
-
-.navigation-section .list-item:nth-child(-n + 2) {
-  margin-right: 46px;
-}
-
 .navigation-link {
   text-decoration: none;
   line-height: 1.14;
   font-weight: 500;
-  padding: 0 16px;
-}
-.contact-section {
-  padding: 32px 27px 32px 0;
-  margin: 0;
-}
-.contact-link {
-  text-decoration: none;
-  line-height: 1.14;
-  font-weight: 500;
+  padding: 16px;
   color: var(--color-black);
+  margin: 0 4px;
 }
-.contact-section .list-item:nth-child(1) {
-  margin-right: 50px;
-}
+
 .navigation-link:visited,
 .contact-link:visited,
 .address-link:visited {
@@ -130,7 +89,9 @@ ul {
 }
 
 /* MAIN CLASSES */
-
+.section {
+  padding: 94px 0px;
+}
 .slider {
   background: var(--color-navy);
   padding: 200px 252px 200px 252px;
@@ -182,10 +143,6 @@ h1 {
   margin: 0;
 }
 
-.background-ash {
-  background: var(--color-ash);
-}
-
 .team-list {
   display: flex;
   justify-content: center;
@@ -204,8 +161,8 @@ h1 {
 .figcaption {
   text-align: center;
   padding: 30px 0;
+  background-color: var(--color-white);
 }
-
 .middle {
   display: flex;
   justify-content: center;
@@ -245,14 +202,15 @@ h1 {
 /* FOOTER CLASSES */
 .footer {
   background-color: var(--color-navy);
-  padding-top: 60px;
+  padding: 60px 15px;
 }
 .address-section {
   display: flex;
   flex-direction: column;
+  gap: 9px;
   color: var(--color-white);
   font-style: normal;
-  padding: 20px 939px 60px 15px;
+  margin-top: 20px;
 }
 .address-link {
   color: var(--color-lightgray);
