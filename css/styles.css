@@ -59,7 +59,8 @@ ul {
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-left: 15px;
+  padding: 24px 93px 25px 15px;
+  /* margin-left: 15px; */
 }
 
 .logo:visited {
@@ -71,9 +72,8 @@ ul {
 .navigation-section {
   display: flex;
   justify-content: flex-start;
-  padding: 0;
-  margin-left: 93px;
-  margin-right: 371px;
+  margin: 0;
+  padding: 32px 371px 32px 0px;
 }
 .list-item {
   display: inline;
@@ -89,7 +89,8 @@ ul {
   font-weight: 500;
 }
 .contact-section {
-  padding: 0;
+   padding: 32px 27px 32px 0;
+  margin: 0;
 }
 .contact-link {
   text-decoration: none;
@@ -179,10 +180,13 @@ h1 {
 }
 
 .figure {
-  /* ??? */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .figcaption {
   text-align: center;
+  padding: 30px 0;
 }
 
 .middle {
@@ -218,16 +222,20 @@ h1 {
   font-size: 16px;
   line-height: 1.19;
   color: var(--color-black);
+  margin-bottom: 10px;
 }
 
 /* FOOTER CLASSES */
 .footer {
-  height: 252px;
   background-color: var(--color-navy);
+  padding-top: 60px;
 }
 .address-section {
+  display: flex;
+  flex-direction: column;
   color: var(--color-white);
   font-style: normal;
+  padding: 20px 939px 60px 15px;
 }
 .address-link {
   color: var(--color-lightgray);
