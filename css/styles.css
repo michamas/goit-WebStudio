@@ -45,6 +45,15 @@ ul {
   margin: 0 auto;
   display: flex;
 }
+.container-nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0 27px 0 15px;
+  justify-content: space-between;
+}
 
 .navigation {
   display: flex;
@@ -68,8 +77,6 @@ ul {
   text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding: 24px 93px 25px 15px;
-  /* margin-left: 15px; */
 }
 
 .logo:visited {
