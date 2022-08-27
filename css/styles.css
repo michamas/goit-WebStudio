@@ -228,9 +228,9 @@ h1 {
 
 /* PORTFOLIO ADDITIONAL CLASSES */
 
-.grid-border {
+/* .grid-border {
   border: 1px solid #eeeeee;
-}
+} */
 .figcaption-grid {
   display: flex;
   flex-direction: column;
@@ -240,6 +240,7 @@ h1 {
   letter-spacing: 0.03em;
   line-height: 1.88;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .grid-bold {
