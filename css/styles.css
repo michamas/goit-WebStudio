@@ -35,7 +35,7 @@ ul {
   color: var(--color-white);
 }
 .background-ash {
-  background: var(--color-ash);
+  background-color: var(--color-ash);
 }
 /* HEADER CLASSES */
 
@@ -43,12 +43,13 @@ ul {
   width: 1200px;
   margin: 0 auto;
 }
-.container-navigation {
+.header {
   /* height: 80px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 27px 16px 15px;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -161,7 +162,7 @@ h1 {
 .figcaption {
   text-align: center;
   padding: 30px 0;
-  background-color: var(--color-white);
+  background: var(--color-white);
 }
 .middle {
   display: flex;
