@@ -34,6 +34,9 @@ ul {
 .text-white {
   color: var(--color-white);
 }
+.text-lightgray {
+  color: var(--color-lightgray);
+}
 .background-ash {
   background-color: var(--color-ash);
 }
@@ -74,24 +77,39 @@ ul {
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: 331px;
+  /* margin-right: 331px; */
+}
+.logo-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigation-link {
   text-decoration: none;
   line-height: 1.14;
   font-weight: 500;
   padding: 16px;
-  color: var(--color-black);
   margin: 0 4px;
+}
+.contact-link {
+  text-decoration: none;
+  line-height: 1.14;
+  font-weight: 500;
+  padding: 16px;
+  margin: 0 4px;
+  color: var(--color-lightgray);
 }
 
 .navigation-link:visited,
-.contact-link:visited,
 .address-link:visited {
   color: var(--color-black);
 }
-.navigation-link:hover,
+.contact-link:visited {
+  color: var(--color-lightgray);
+}
+
 .contact-link:hover,
+.navigation-link:hover,
 .address-link:hover {
   color: var(--color-blue);
 }
