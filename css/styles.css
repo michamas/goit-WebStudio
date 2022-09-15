@@ -8,6 +8,8 @@
   --color-lightgray: #757575;
   --color-almostblack: #212121;
   --color-black: #000000;
+  --color-icon-grey: #afb1b8;
+  --color-icon-dark: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -119,7 +121,8 @@ ul {
   padding: 94px 0px;
 }
 .slider {
-  background: var(--color-navy);
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url("https://image.ibb.co/mjdbZ5/bg5.jpg");
   padding: 200px 252px 200px 252px;
   display: flex;
   flex-direction: column;
@@ -193,7 +196,7 @@ h1 {
   flex-direction: column;
   font-size: 16px;
   gap: 10px;
-  padding: 30px 0;
+  padding-top: 30px;
   background: var(--color-white);
 }
 .middle {
@@ -309,3 +312,173 @@ h1 {
   justify-content: center;
   gap: 8px;
 }
+
+.nav-icon {
+  fill: var(--color-lightgray);
+}
+.nav-icon:hover {
+  fill: var(--color-blue);
+}
+.contact-link:hover .nav-icon {
+  fill: var(--color-blue);
+}
+.lorem-icon {
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background: var(--color-ash);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  background-color: var(--color-white);
+}
+.media-icon {
+  fill: var(--color-icon-grey);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+}
+.client-icon {
+  fill: var(--color-icon-grey);
+  width: 170px;
+  height: 72px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icon-media:hover {
+  fill: var(--color-white);
+  background-color: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.footer-media {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.footer-icon {
+  fill: var(--color-white);
+  border-radius: 50%;
+  background-color: var(--color-icon-dark);
+  width: 44px;
+  height: 44px;
+  border: none;
+}
+.footer-icon:hover {
+  fill: var(--color-white);
+  background-color: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 70px;
+}
+
+h4 {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+/* ICONS - plik sprite?*/
+/* .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-Logo4 {
+  width: 57px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-astronaut-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-diagram-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.icon-clock-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.icon-antenna-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.icon-smartphone {
+  width: 20px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-linkedin-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icon-facebook-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-twitter-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.icon-instagram-2 {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-envelope {
+  width: 43px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-Logo6 {
+  width: 57px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-Logo5 {
+  width: 57px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-Logo3 {
+  width: 57px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-Logo2 {
+  width: 56px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.icon-Logo1 {
+  width: 56px;
+  height: 32px;
+  background-position: -288px -48px;
+}
+ */
