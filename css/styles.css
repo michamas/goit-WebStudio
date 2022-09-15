@@ -122,7 +122,6 @@ ul {
 }
 .slider {
   background: rgba(47, 48, 58, 0.4);
-  background-image: url("https://image.ibb.co/mjdbZ5/bg5.jpg");
   padding: 200px 252px 200px 252px;
   display: flex;
   flex-direction: column;
@@ -130,7 +129,11 @@ ul {
   align-items: center;
   padding: 200px 0;
 }
-
+.background-slider {
+  background-image: url("../images/agencja/background.png");
+  max-width: 1600px;
+  margin: 0 auto;
+}
 h1 {
   margin: 0 auto;
 }
@@ -306,6 +309,11 @@ h1 {
   gap: 30px;
   margin-top: 34px;
 }
+.grid-border:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 
 .button-list {
   display: flex;
@@ -355,11 +363,22 @@ h1 {
   border-radius: 4px;
 }
 
-.icon-media:hover {
+.client-icon:hover {
+  fill: var(--color-blue);
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border-color: var(--color-blue);
+}
+
+.media-icon:hover {
   fill: var(--color-white);
   background-color: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+.media-icon:focus {
+  background-color: pink;
 }
 .footer-media {
   display: flex;
@@ -379,6 +398,9 @@ h1 {
   background-color: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+.footer-icon:focus {
+  background-color: pink;
 }
 
 .footer-section {
