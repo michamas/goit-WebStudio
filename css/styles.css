@@ -158,6 +158,7 @@ h1 {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: var(--color-blue);
 }
 
 .primary-title {
@@ -378,7 +379,7 @@ h1 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-.media-icon:focus {
+.media-icon:focus-visible {
   background-color: pink;
 }
 .footer-media {
