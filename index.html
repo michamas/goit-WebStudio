@@ -21,6 +21,7 @@
     <!-- PODPIĘCIE PLIKU styles.css -->
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
+
   <body class="body">
     <!-- NAGŁÓWEK -->
     <header class="background-white">
@@ -33,25 +34,29 @@
 
           <!-- NAWIGACJA -->
           <nav class="navigation">
-            <a href="index.html" class="navigation-link"
+            <a
+              href="index.html"
+              class="navigation-link transition blue-underline"
               ><span class="text-blue">Agencja</span>
             </a>
 
-            <a href="portfolio.html" class="navigation-link">Portfolio</a>
+            <a href="portfolio.html" class="navigation-link transition"
+              >Portfolio</a
+            >
 
-            <a href="" class="navigation-link">Kontakt </a>
+            <a href="" class="navigation-link transition">Kontakt</a>
           </nav>
         </div>
         <!-- DANE DO KONTAKTU -->
-        <div>
-          <a href="mailto:info@devstudio.com" class="contact-link">
+        <div class="contact">
+          <a href="mailto:info@devstudio.com" class="contact-link transition">
             <svg class="nav-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
 
-          <a href="tel:+48111111111" class="contact-link">
+          <a href="tel:+48111111111" class="contact-link transition">
             <svg class="nav-icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
@@ -69,7 +74,9 @@
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="top-button">Zamów usługę</button>
+          <button type="button" class="top-button" data-modal-open>
+            Zamów usługę
+          </button>
         </section>
       </div>
       <section class="container">
@@ -128,7 +135,8 @@
       <section class="section container">
         <h2 class="primary-title">Czym sie zajmujemy</h2>
         <ul class="primary-list">
-          <li>
+          <li class="relative">
+            <h4 class="label">aplikacje komputerowe</h4>
             <img
               src="./images/agencja/desk.jpg"
               alt="biurko"
@@ -136,7 +144,8 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="relative">
+            <h4 class="label">aplikacje mobilne</h4>
             <img
               src="./images/agencja/laptop.jpg"
               alt="laptop"
@@ -144,7 +153,8 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="relative">
+            <h4 class="label">rozwiązania graficzne</h4>
             <img
               src="./images/agencja/tablet.jpg"
               alt="tablet"
@@ -173,7 +183,7 @@
                   <span>Product Designer</span>
                 </figcaption>
                 <div class="team-media">
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-instagram-2"
                       width="20"
@@ -182,7 +192,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -191,7 +201,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -200,7 +210,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -227,7 +237,7 @@
                   <span>Frontend Developer</span>
                 </figcaption>
                 <div class="team-media">
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-instagram-2"
                       width="20"
@@ -236,7 +246,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -245,7 +255,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -254,7 +264,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -281,7 +291,7 @@
                   <span>Marketing</span>
                 </figcaption>
                 <div class="team-media">
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-instagram-2"
                       width="20"
@@ -290,7 +300,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -299,7 +309,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -308,7 +318,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -335,7 +345,7 @@
                   <span>UI Designer</span>
                 </figcaption>
                 <div class="team-media">
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-instagram-2"
                       width="20"
@@ -344,7 +354,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -353,7 +363,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -362,7 +372,7 @@
                       y="12"
                     ></use>
                   </svg>
-                  <svg class="media-icon">
+                  <svg class="media-icon transition">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -381,7 +391,7 @@
         <h2 class="primary-title">Nasi klienci</h2>
         <ul class="primary-list">
           <li>
-            <svg class="client-icon">
+            <svg class="client-icon transition">
               <use
                 href="./images/icons.svg#icon-Logo1"
                 width="106"
@@ -392,7 +402,7 @@
             </svg>
           </li>
           <li>
-            <svg class="client-icon">
+            <svg class="client-icon transition">
               <use
                 href="./images/icons.svg#icon-Logo2"
                 width="106"
@@ -403,7 +413,7 @@
             </svg>
           </li>
           <li>
-            <svg class="client-icon">
+            <svg class="client-icon transition">
               <use
                 href="./images/icons.svg#icon-Logo3"
                 width="106"
@@ -414,7 +424,7 @@
             </svg>
           </li>
           <li>
-            <svg class="client-icon">
+            <svg class="client-icon transition">
               <use
                 href="./images/icons.svg#icon-Logo4"
                 width="106"
@@ -425,7 +435,7 @@
             </svg>
           </li>
           <li>
-            <svg class="client-icon">
+            <svg class="client-icon transition">
               <use
                 href="./images/icons.svg#icon-Logo5"
                 width="106"
@@ -436,7 +446,7 @@
             </svg>
           </li>
           <li>
-            <svg class="client-icon">
+            <svg class="client-icon transition">
               <use
                 href="./images/icons.svg#icon-Logo6"
                 width="106"
@@ -461,16 +471,18 @@
 
           <address class="address-section">
             <a>m. Warszawa, Aleje Jerozolimskie 21 </a>
-            <a href="mailto:info@devstudio.com" class="address-link"
+            <a href="mailto:info@devstudio.com" class="address-link transition"
               >info@devstudio.com
             </a>
-            <a href="tel:+48111111111" class="address-link">+48 111 111 111 </a>
+            <a href="tel:+48111111111" class="address-link transition"
+              >+48 111 111 111
+            </a>
           </address>
         </div>
         <div>
           <h4>DOŁĄCZ DO NAS</h4>
           <div class="footer-media">
-            <svg class="footer-icon">
+            <svg class="footer-icon transition">
               <use
                 href="./images/icons.svg#icon-instagram-2"
                 width="20"
@@ -479,7 +491,7 @@
                 y="12"
               ></use>
             </svg>
-            <svg class="footer-icon">
+            <svg class="footer-icon transition">
               <use
                 href="./images/icons.svg#icon-twitter-1"
                 width="20"
@@ -488,7 +500,7 @@
                 y="12"
               ></use>
             </svg>
-            <svg class="footer-icon">
+            <svg class="footer-icon transition">
               <use
                 href="./images/icons.svg#icon-facebook-1"
                 width="20"
@@ -497,7 +509,7 @@
                 y="12"
               ></use>
             </svg>
-            <svg class="footer-icon">
+            <svg class="footer-icon transition">
               <use
                 href="./images/icons.svg#icon-linkedin-1"
                 width="20"
@@ -510,5 +522,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- OKNO MODALNE -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
