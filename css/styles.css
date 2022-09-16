@@ -121,7 +121,12 @@ ul {
   padding: 94px 0px;
 }
 .slider {
-  background-image: url("../images/agencja/background.png");
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("../images/agencja/background.png");
   max-width: 1600px;
   margin: auto;
   padding: 200px 252px 200px 252px;
@@ -132,7 +137,7 @@ ul {
   padding: 200px 0;
 }
 .background-slider {
-  background: rgba(47, 48, 58, 0.4);
+  background: var(--color-navy);
   margin: 0 auto;
 }
 h1 {
@@ -379,7 +384,7 @@ h1 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-.media-icon:focus-visible {
+.media-icon:focus {
   background-color: pink;
 }
 .footer-media {
