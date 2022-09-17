@@ -524,6 +524,56 @@ h4 {
   color: #ffffff;
 }
 
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: var(--color-navy);
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 42px;
+  width: 200px;
+  height: 50px;
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--color-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
+}
+.footer-send-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-white);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, background-color;
+}
+.sign-in {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--color-white);
+}
+
 /* OKNO MODALNE = BACKDROP */
 .backdrop {
   position: fixed;
