@@ -536,11 +536,13 @@ h4 {
   border-radius: 4px;
   padding-left: 16px;
   background-color: var(--color-navy);
+  color: var(--color-white);
 }
 
 .footer-button {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 24px;
   padding-left: 42px;
   width: 200px;
@@ -549,10 +551,15 @@ h4 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--color-blue);
+  cursor: pointer;
+  color: var(--color-white);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, border-color;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--color-white);
 }
 
 .footer-button:hover {
@@ -567,12 +574,12 @@ h4 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, background-color;
 }
-.sign-in {
+/* .button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--color-white);
-}
+} */
 
 /* OKNO MODALNE = BACKDROP */
 .backdrop {
@@ -587,13 +594,14 @@ h4 {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
   background-color: var(--color-white);
+  padding: 40px;
 }
 
 .close-btn {
@@ -607,10 +615,101 @@ h4 {
   border-radius: 50%;
   cursor: pointer;
 }
+.close-icon {
+  height: 18px;
+  width: 18px;
+}
 
 .is-hidden {
   opacity: 50%;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 300ms ease-in-out, visibility 300ms linear;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--color-almostblack);
+}
+.modal-label {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--color-lightgray);
+  margin-top: 10px;
+}
+.modal-textarea {
+  display: block;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--color-almostblack);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
+}
+.modal-input:focus,
+ .modal-input:hover {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.modal-label:hover {
+  fill: var(--color-blue);
+}
+
+.send-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--color-blue);
+  cursor: pointer;
+  color: var(--color-white);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color;
+}
+
+.send-button:hover {
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
 }
