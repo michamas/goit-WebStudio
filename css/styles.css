@@ -653,6 +653,9 @@ h4 {
   padding: 12px 16px;
   margin-bottom: 20px;
   margin-top: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
 }
 
 .modal-icon {
@@ -664,9 +667,12 @@ h4 {
   fill: var(--color-almostblack);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border-color;
+  transition-property: fill;
 }
 
+.modal-input:hover + .modal-icon {
+  fill: #2196f3;
+}
 .modal-input {
   width: 100%;
   height: 40px;
@@ -679,7 +685,9 @@ h4 {
   transition-property: border-color;
 }
 .modal-input:focus,
- .modal-input:hover {
+.modal-input:hover,
+.modal-textarea:hover,
+.modal-textarea:focus {
   border-color: #2196f3;
   outline: none;
 }
