@@ -29,7 +29,8 @@
       <div class="container head">
         <div class="logo-navigation">
           <a href="index.html" rel="noreferrer noopener" class="logo"
-            ><span class="text-blue">Web</span>Studio
+            ><span class="text-blue">Web</span
+            ><span class="text-black">Studio</span>
           </a>
 
           <!-- NAWIGACJA -->
@@ -38,9 +39,13 @@
               ><span class="text-blue">Agencja</span>
             </a>
 
-            <a href="portfolio.html" class="navigation-link">Portfolio</a>
+            <a href="portfolio.html" class="navigation-link"
+              ><span class="text-black">Portfolio</span></a
+            >
 
-            <a href="" class="navigation-link">Kontakt</a>
+            <a href="" class="navigation-link"
+              ><span class="text-black">Kontakt</span></a
+            >
           </nav>
         </div>
         <!-- DANE DO KONTAKTU -->
@@ -543,7 +548,7 @@
     </footer>
 
     <!-- OKNO MODALNE -->
-    <!-- is-hidden -->
+    <!-- is-hidden wrzuć poniżej-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -624,8 +629,15 @@
 
           <input id="accept-policy" type="checkbox" name="policy" />
           <label for="accept-policy"
-            >Oświadczam iż akceptuję Regulamin i Politykę Prywatności</label
-          >
+            >Oświadczam iż akceptuję
+            <a href="" rel="noreferrer noopener" class="modal-link"
+              >Regulamin</a
+            >
+            i
+            <a href="" rel="noreferrer noopener" class="modal-link"
+              >Politykę Prywatności</a
+            >
+          </label>
           <button class="send-button" type="submit">Wyślij</button>
         </form>
       </div>

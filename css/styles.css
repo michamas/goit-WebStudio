@@ -40,6 +40,10 @@ ul {
 .text-lightgray {
   color: var(--color-lightgray);
 }
+
+.text-black {
+  color: var(--color-black);
+}
 .background-ash {
   background-color: var(--color-ash);
 }
@@ -614,10 +618,18 @@ h4 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
 }
 .close-icon {
   height: 18px;
   width: 18px;
+}
+
+.close-btn:hover {
+  border-color: #2196f3;
+  fill: var(--color-blue);
 }
 
 .is-hidden {
@@ -670,7 +682,7 @@ h4 {
   transition-property: fill;
 }
 
-.modal-input:hover + .modal-icon {
+.modal-label:hover > .modal-icon {
   fill: #2196f3;
 }
 .modal-input {
@@ -682,7 +694,7 @@ h4 {
   padding-left: 40px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border-color;
+  transition-property: border-color, fill;
 }
 .modal-input:focus,
 .modal-input:hover,
@@ -690,6 +702,7 @@ h4 {
 .modal-textarea:focus {
   border-color: #2196f3;
   outline: none;
+  fill: var(--color-blue);
 }
 
 .modal-label:hover {
@@ -720,4 +733,24 @@ h4 {
 .send-button:hover {
   background-color: var(--color-blue-hover);
   border-color: var(--color-blue-hover);
+}
+
+.modal-link {
+  text-decoration: none;
+  line-height: 1.14;
+  font-weight: 500;
+  color: var(--color-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  cursor: pointer;
+}
+.modal-link :visited {
+  color: var(--color-blue);
+}
+.modal-link:hover {
+  color: var(--color-blue-hover);
+}
+#accept-policy {
+  cursor: pointer;
 }
