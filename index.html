@@ -27,25 +27,21 @@
     <header class="background--white">
       <!-- LOGO STRONY -->
       <div class="container head">
-        <div class="head-navigation">
-          <a href="index.html" rel="noreferrer noopener" class="logo"
-            ><span class="text--blue">Web</span
-            ><span class="text--black">Studio</span>
+        <div class="navigation">
+          <a
+            href="index.html"
+            rel="noreferrer noopener"
+            class="navigation__logo logo"
+            ><span class="text--blue">Web</span><span class="">Studio</span>
           </a>
 
           <!-- NAWIGACJA -->
-          <nav class="navigation">
-            <a href="index.html" class="navigation__link underline--blue"
-              ><span class="text--blue">Agencja</span>
-            </a>
+          <nav>
+            <a href="index.html" class="navigation__link active">Agencja </a>
 
-            <a href="portfolio.html" class="navigation__link"
-              ><span class="text--black">Portfolio</span></a
-            >
+            <a href="portfolio.html" class="navigation__link">Portfolio</a>
 
-            <a href="" class="navigation__link"
-              ><span class="text--black">Kontakt</span></a
-            >
+            <a href="" class="navigation__link">Kontakt</a>
           </nav>
         </div>
         <!-- DANE DO KONTAKTU -->
@@ -85,51 +81,51 @@
         </div>
       </section>
       <section class="container">
-        <ul class="icons-section padding">
+        <ul class="container__advantages padding">
           <li>
-            <div class="icons-section__icon">
+            <div class="container__advantages--icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
               </svg>
             </div>
-            <h3 class="icons-section__title">LOREM IPSUM</h3>
-            <p class="icons-section__paragraph">
+            <h3 class="container__advantages--title">LOREM IPSUM</h3>
+            <p class="container__advantages--paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons-section__icon">
+            <div class="container__advantages--icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
             </div>
-            <h3 class="icons-section__title">LOREM IPSUM</h3>
-            <p class="icons-section__paragraph">
+            <h3 class="container__advantages--title">LOREM IPSUM</h3>
+            <p class="container__advantages--paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons-section__icon">
+            <div class="container__advantages--icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
               </svg>
             </div>
-            <h3 class="icons-section__title">LOREM IPSUM</h3>
-            <p class="icons-section__paragraph">
+            <h3 class="container__advantages--title">LOREM IPSUM</h3>
+            <p class="container__advantages--paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <div class="icons-section__icon">
+            <div class="container__advantages--icon">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
               </svg>
             </div>
-            <h3 class="icons-section__title">LOREM IPSUM</h3>
-            <p class="icons-section__paragraph">
+            <h3 class="container__advantages--title">LOREM IPSUM</h3>
+            <p class="container__advantages--paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -138,52 +134,55 @@
       </section>
 
       <section class="padding container">
-        <h2 class="main-title">Czym sie zajmujemy</h2>
-        <ul class="main-list">
-          <li class="relative">
-            <h4 class="main-list__label">aplikacje komputerowe</h4>
-            <img
-              src="./images/agencja/desk.jpg"
-              alt="biurko"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="relative">
-            <h4 class="main-list__label">aplikacje mobilne</h4>
-            <img
-              src="./images/agencja/laptop.jpg"
-              alt="laptop"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li class="relative">
-            <h4 class="main-list__label">rozwiązania graficzne</h4>
-            <img
-              src="./images/agencja/tablet.jpg"
-              alt="tablet"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+        <div class="container__offer">
+          <h2>Czym sie zajmujemy</h2>
+          <ul class="container__offer--list">
+            <li>
+              <h4 class="container__offer--label">aplikacje komputerowe</h4>
+              <img
+                src="./images/agencja/desk.jpg"
+                alt="biurko"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <h4 class="container__offer--label">aplikacje mobilne</h4>
+              <img
+                src="./images/agencja/laptop.jpg"
+                alt="laptop"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <h4 class="container__offer--label">rozwiązania graficzne</h4>
+              <img
+                src="./images/agencja/tablet.jpg"
+                alt="tablet"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="padding background--ash">
         <div class="container">
-          <h2 class="main-title">Nasz zespół</h2>
-          <ul class="team-list main-list">
+          <div class="container__team"></div>
+          <h2>Nasz zespół</h2>
+          <ul class="container__team--list">
             <li>
-              <figure class="team-list__figure">
+              <figure class="container__team--figure">
                 <img
                   src="./images/agencja/productdes.jpg"
                   alt="product-designer"
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-list__figcaption">
-                  <span class="team-list__text-bold"> John Doe</span>
+                <figcaption class="container__team--figcaption">
+                  <span class="container__team--text-bold"> John Doe</span>
 
                   <span>Product Designer</span>
                 </figcaption>
@@ -229,15 +228,15 @@
             </li>
 
             <li>
-              <figure class="team-list__figure">
+              <figure class="container__team--figure">
                 <img
                   src="./images/agencja/frontenddev.jpg"
                   alt="frontend-developer"
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-list__figcaption">
-                  <span class="team-list__text-bold"> John Doe</span>
+                <figcaption class="container__team--figcaption">
+                  <span class="container__team--text-bold"> John Doe</span>
 
                   <span>Frontend Developer</span>
                 </figcaption>
@@ -283,15 +282,15 @@
             </li>
 
             <li>
-              <figure class="team-list__figure">
+              <figure class="container__team--figure">
                 <img
                   src="./images/agencja/marketing.jpg"
                   alt="product-designer"
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-list__figcaption">
-                  <span class="team-list__text-bold"> John Doe</span>
+                <figcaption class="container__team--figcaption">
+                  <span class="container__team--text-bold"> John Doe</span>
 
                   <span>Marketing</span>
                 </figcaption>
@@ -337,15 +336,15 @@
             </li>
 
             <li>
-              <figure class="team-list__figure">
+              <figure class="container__team--figure">
                 <img
                   src="./images/agencja/uides.jpg"
                   alt="ui-designer"
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-list__figcaption">
-                  <span class="team-list__text-bold"> John Doe</span>
+                <figcaption class="container__team--figcaption">
+                  <span class="container__team--text-bold"> John Doe</span>
 
                   <span>UI Designer</span>
                 </figcaption>
@@ -393,8 +392,8 @@
         </div>
       </section>
       <section class="padding container">
-        <h2 class="main-title">Nasi klienci</h2>
-        <ul class="main-list">
+        <h2>Nasi klienci</h2>
+        <ul class="container__offer--list">
           <li>
             <svg class="client-icon">
               <use
