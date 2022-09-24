@@ -26,22 +26,22 @@
     <!-- NAGŁÓWEK -->
     <header class="background--white">
       <!-- LOGO STRONY -->
-      <div class="container head">
-        <div class="navigation">
+      <div class="nav-bar">
+        <div class="nav-bar__container">
           <a
             href="index.html"
             rel="noreferrer noopener"
-            class="navigation__logo logo"
+            class="nav-bar__logo logo"
             ><span class="text--blue">Web</span><span class="">Studio</span>
           </a>
 
           <!-- NAWIGACJA -->
           <nav>
-            <a href="index.html" class="navigation__link active">Agencja </a>
+            <a href="index.html" class="nav-bar__link active">Agencja </a>
 
-            <a href="portfolio.html" class="navigation__link">Portfolio</a>
+            <a href="portfolio.html" class="nav-bar__link">Portfolio</a>
 
-            <a href="" class="navigation__link">Kontakt</a>
+            <a href="" class="nav-bar__link">Kontakt</a>
           </nav>
         </div>
         <!-- DANE DO KONTAKTU -->
@@ -66,7 +66,7 @@
     <!-- MAIN -->
     <main>
       <section class="top-section">
-        <div class="top-section__image">
+        <div class="top-section__container">
           <h1 class="top-section__title">
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
@@ -80,53 +80,53 @@
           </button>
         </div>
       </section>
-      <section class="container">
-        <div class="container__advantages">
-          <ul class="container__advantages--list padding">
+      <section class="mid-section">
+        <div class="mid-section__container">
+          <ul class="mid-section__list padding">
             <li>
-              <div class="container__advantages--icons">
+              <div class="mid-section__icons">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="container__advantages--title">LOREM IPSUM</h3>
-              <p class="container__advantages--paragraph">
+              <h3 class="mid-section__title">LOREM IPSUM</h3>
+              <p class="mid-section__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="container__advantages--icons">
+              <div class="mid-section__icons">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="container__advantages--title">LOREM IPSUM</h3>
-              <p class="container__advantages--paragraph">
+              <h3 class="mid-section__title">LOREM IPSUM</h3>
+              <p class="mid-section__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="container__advantages--icons">
+              <div class="mid-section__icons">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="container__advantages--title">LOREM IPSUM</h3>
-              <p class="container__advantages--paragraph">
+              <h3 class="mid-section__title">LOREM IPSUM</h3>
+              <p class="mid-section__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <div class="container__advantages--icons">
+              <div class="mid-section__icons">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="container__advantages--title">LOREM IPSUM</h3>
-              <p class="container__advantages--paragraph">
+              <h3 class="mid-section__title">LOREM IPSUM</h3>
+              <p class="mid-section__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -135,12 +135,12 @@
         </div>
       </section>
 
-      <section class="padding container">
-        <div class="container__offer">
+      <section class="padding offer-section">
+        <div class="offer-section__container">
           <h2>Czym sie zajmujemy</h2>
-          <ul class="container__offer--list container__list">
+          <ul class="offer-section__list">
             <li>
-              <h4 class="container__offer--label">aplikacje komputerowe</h4>
+              <h4 class="offer-section__label">aplikacje komputerowe</h4>
               <img
                 src="./images/agencja/desk.jpg"
                 alt="biurko"
@@ -149,7 +149,7 @@
               />
             </li>
             <li>
-              <h4 class="container__offer--label">aplikacje mobilne</h4>
+              <h4 class="offer-section__label">aplikacje mobilne</h4>
               <img
                 src="./images/agencja/laptop.jpg"
                 alt="laptop"
@@ -158,7 +158,7 @@
               />
             </li>
             <li>
-              <h4 class="container__offer--label">rozwiązania graficzne</h4>
+              <h4 class="offer-section__label">rozwiązania graficzne</h4>
               <img
                 src="./images/agencja/tablet.jpg"
                 alt="tablet"
@@ -170,236 +170,235 @@
         </div>
       </section>
 
-      <section class="padding background--ash">
-        <div class="container">
-          <div class="container__team">
-            <h2>Nasz zespół</h2>
-            <ul class="container__team--list container__list">
-              <li>
-                <figure class="container__team--figure">
-                  <img
-                    src="./images/agencja/productdes.jpg"
-                    alt="product-designer"
-                    width="270"
-                    height="260"
-                  />
-                  <figcaption class="container__team--figcaption">
-                    <span class="container__team--text-bold"> John Doe</span>
+      <section class="padding team-section">
+        <div class="team-section__container">
+          <h2>Nasz zespół</h2>
+          <ul class="team-section__list">
+            <li>
+              <figure class="team-section__figure">
+                <img
+                  src="./images/agencja/productdes.jpg"
+                  alt="product-designer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-section__figcaption">
+                  <span class="team-section__figcaption--bold"> John Doe</span>
 
-                    <span>Product Designer</span>
-                  </figcaption>
-                  <div class="container__team--icons">
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-instagram-2"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-twitter-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-linkedin-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                  </div>
-                </figure>
-              </li>
+                  <span>Product Designer</span>
+                </figcaption>
+                <div class="team-section__media">
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-instagram-2"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-twitter-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-facebook-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-linkedin-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </figure>
+            </li>
 
-              <li>
-                <figure class="container__team--figure">
-                  <img
-                    src="./images/agencja/frontenddev.jpg"
-                    alt="frontend-developer"
-                    width="270"
-                    height="260"
-                  />
-                  <figcaption class="container__team--figcaption">
-                    <span class="container__team--text-bold"> John Doe</span>
+            <li>
+              <figure class="team-section__figure">
+                <img
+                  src="./images/agencja/frontenddev.jpg"
+                  alt="frontend-developer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-section__figcaption">
+                  <span class="team-section__figcaption--bold"> John Doe</span>
 
-                    <span>Frontend Developer</span>
-                  </figcaption>
-                  <div class="container__team--icons">
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-instagram-2"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-twitter-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-linkedin-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                  </div>
-                </figure>
-              </li>
+                  <span>Frontend Developer</span>
+                </figcaption>
+                <div class="team-section__media">
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-instagram-2"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-twitter-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-facebook-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-linkedin-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </figure>
+            </li>
 
-              <li>
-                <figure class="container__team--figure">
-                  <img
-                    src="./images/agencja/marketing.jpg"
-                    alt="product-designer"
-                    width="270"
-                    height="260"
-                  />
-                  <figcaption class="container__team--figcaption">
-                    <span class="container__team--text-bold"> John Doe</span>
+            <li>
+              <figure class="team-section__figure">
+                <img
+                  src="./images/agencja/marketing.jpg"
+                  alt="product-designer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-section__figcaption">
+                  <span class="team-section__figcaption--bold"> John Doe</span>
 
-                    <span>Marketing</span>
-                  </figcaption>
-                  <div class="container__team--icons">
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-instagram-2"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-twitter-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-linkedin-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                  </div>
-                </figure>
-              </li>
+                  <span>Marketing</span>
+                </figcaption>
+                <div class="team-section__media">
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-instagram-2"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-twitter-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-facebook-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-linkedin-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </figure>
+            </li>
 
-              <li>
-                <figure class="container__team--figure">
-                  <img
-                    src="./images/agencja/uides.jpg"
-                    alt="ui-designer"
-                    width="270"
-                    height="260"
-                  />
-                  <figcaption class="container__team--figcaption">
-                    <span class="container__team--text-bold"> John Doe</span>
+            <li>
+              <figure class="team-section__figure">
+                <img
+                  src="./images/agencja/uides.jpg"
+                  alt="ui-designer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-section__figcaption">
+                  <span class="team-section__figcaption--bold"> John Doe</span>
 
-                    <span>UI Designer</span>
-                  </figcaption>
-                  <div class="container__team--icons">
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-instagram-2"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-twitter-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                    <svg class="container__team--media-icon">
-                      <use
-                        href="./images/icons.svg#icon-linkedin-1"
-                        width="20"
-                        height="20"
-                        x="12"
-                        y="12"
-                      ></use>
-                    </svg>
-                  </div>
-                </figure>
-              </li>
-            </ul>
-          </div>
+                  <span>UI Designer</span>
+                </figcaption>
+                <div class="team-section__media">
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-instagram-2"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-twitter-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-facebook-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="team-section__media--icon">
+                    <use
+                      href="./images/icons.svg#icon-linkedin-1"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="padding container">
-        <div class="container__clients">
+
+      <section class="padding client-section">
+        <div class="container__client-section">
           <h2>Nasi klienci</h2>
-          <ul class="container__clients--list container__list">
+          <ul class="client-section__list">
             <li>
-              <svg class="container__clients--icon">
+              <svg class="client-section__icon">
                 <use
                   href="./images/icons.svg#icon-Logo1"
                   width="106"
@@ -410,7 +409,7 @@
               </svg>
             </li>
             <li>
-              <svg class="container__clients--icon">
+              <svg class="client-section__icon">
                 <use
                   href="./images/icons.svg#icon-Logo2"
                   width="106"
@@ -421,7 +420,7 @@
               </svg>
             </li>
             <li>
-              <svg class="container__clients--icon">
+              <svg class="client-section__icon">
                 <use
                   href="./images/icons.svg#icon-Logo3"
                   width="106"
@@ -432,7 +431,7 @@
               </svg>
             </li>
             <li>
-              <svg class="container__clients--icon">
+              <svg class="client-section__icon">
                 <use
                   href="./images/icons.svg#icon-Logo4"
                   width="106"
@@ -443,7 +442,7 @@
               </svg>
             </li>
             <li>
-              <svg class="container__clients--icon">
+              <svg class="client-section__icon">
                 <use
                   href="./images/icons.svg#icon-Logo5"
                   width="106"
@@ -454,7 +453,7 @@
               </svg>
             </li>
             <li>
-              <svg class="container__clients--icon">
+              <svg class="client-section__icon">
                 <use
                   href="./images/icons.svg#icon-Logo6"
                   width="106"
@@ -470,13 +469,13 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer background--navy">
-      <div class="container container__footer">
+    <footer class="footer">
+      <div class="footer__container">
         <div>
           <a
             href="index.html"
             rel="noreferrer noopener"
-            class="logo container__footer--logo"
+            class="logo footer__logo"
             ><span class="text--blue">Web</span>Studio
           </a>
 
@@ -492,8 +491,8 @@
         </div>
         <div>
           <h4>DOŁĄCZ DO NAS</h4>
-          <div class="container__footer--icons">
-            <svg class="container__footer--icon">
+          <div class="footer__media">
+            <svg class="footer__icon">
               <use
                 href="./images/icons.svg#icon-instagram-2"
                 width="20"
@@ -502,7 +501,7 @@
                 y="12"
               ></use>
             </svg>
-            <svg class="container__footer--icon">
+            <svg class="footer__icon">
               <use
                 href="./images/icons.svg#icon-twitter-1"
                 width="20"
@@ -511,7 +510,7 @@
                 y="12"
               ></use>
             </svg>
-            <svg class="container__footer--icon">
+            <svg class="footer__icon">
               <use
                 href="./images/icons.svg#icon-facebook-1"
                 width="20"
@@ -520,7 +519,7 @@
                 y="12"
               ></use>
             </svg>
-            <svg class="container__footer--icon">
+            <svg class="footer__icon">
               <use
                 href="./images/icons.svg#icon-linkedin-1"
                 width="20"
@@ -561,8 +560,8 @@
 
     <!-- OKNO MODALNE -->
     <!-- is-hidden wrzuć poniżej-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+    <div class="modal is-hidden" data-modal>
+      <div class="modal__container">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg class="modal__close-btn--icon">
             <use
