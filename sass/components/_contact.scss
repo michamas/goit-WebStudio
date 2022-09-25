@@ -1,0 +1,40 @@
+.contact {
+  &__container {
+    display: flex;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    line-height: 1.14;
+    font-weight: 500;
+    padding: 16px;
+    margin: 0 4px;
+    color: getColor("lightGrey");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:hover {
+      color: getColor("active");
+      border: getColor("active");
+      border-radius: 2px;
+    }
+    &:hover .contact__icon {
+      fill: getColor("active");
+    }
+    &:visited {
+      color: getColor("lightGrey");
+    }
+  }
+  &__icon {
+    fill: getColor("lightGrey");
+    margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    &:hover {
+      fill: getColor("active");
+    }
+  }
+}

@@ -20,5 +20,30 @@
     padding: 16px;
     margin: 0 4px;
     position: relative;
+    &:visited {
+      color: getColor("black");
+    }
+  }
+  &__logo {
+    color: getColor("black");
+    &:visited {
+      color: getColor("black");
+    }
+  }
+}
+.navbar__link--active {
+  color: getColor("active");
+  &::after {
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    content: "";
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: getColor("active");
+  }
+  &:visited {
+    color: getColor("active");
   }
 }

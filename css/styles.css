@@ -4,7 +4,7 @@
 */
 
 :root {
-  --color-navy: #2f303a;
+  --color-darkgrey: #2f303a;
   --color-background: #e5e5e5;
   --color-ash: #f5f4fa;
   --color-blue: #2196f3;
@@ -33,10 +33,6 @@ body {
 
 ul {
   list-style: none;
-}
-
-.logo__text--blue {
-  color: var(--color-blue);
 }
 
 /*-------------HEADER CLASSES-------------*/
@@ -73,6 +69,10 @@ ul {
   color: var(--color-black);
 }
 
+.navbar__logo:visited {
+  color: var(--color-black);
+}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -82,15 +82,29 @@ ul {
   margin-right: 77px;
   color: var(--color-black);
 }
-
-.navbar__logo:visited {
+.logo__text--blue {
+  color: var(--color-blue);
+}
+.navbar__link:visited,
+.address__link:visited {
   color: var(--color-black);
 }
-
-.footer__logo:visited {
-  color: var(--color-white);
+.navbar__link--active {
+  color: var(--color-blue);
 }
-
+.navbar__link--active:visited {
+  color: var(--color-blue);
+}
+.navbar__link--active::after {
+  position: absolute;
+  top: 62px;
+  left: 0px;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-blue);
+}
 .contact__container {
   display: flex;
 }
@@ -109,35 +123,6 @@ ul {
   transition-property: color;
 }
 
-.navbar__link:visited,
-.address__link:visited {
-  color: var(--color-black);
-}
-.navbar__link.active {
-  color: var(--color-blue);
-}
-.navbar__link--active::after {
-  position: absolute;
-  top: 62px;
-  left: 0px;
-  content: "";
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-blue);
-}
-.contact__link:visited {
-  color: var(--color-lightgray);
-}
-
-.contact__link:hover,
-.navbar__link:hover,
-.address__link:hover {
-  color: var(--color-blue);
-  border: var(--color-blue);
-  border-radius: 2px;
-}
-
 .contact__icon {
   fill: var(--color-lightgray);
   margin-right: 10px;
@@ -152,12 +137,21 @@ ul {
   fill: var(--color-blue);
 }
 
+.contact__link:visited {
+  color: var(--color-lightgray);
+}
+
+.contact__link:hover,
+.navbar__link:hover,
+.address__link:hover {
+  color: var(--color-blue);
+  border: var(--color-blue);
+  border-radius: 2px;
+}
+
 /*-------------MAIN CLASSES-------------*/
-/* .padding {
-  padding: 94px 0px;
-} */
 .slider {
-  background: var(--color-navy);
+  background: var(--color-darkgrey);
   margin: 0 auto;
 }
 .slider__container {
@@ -176,10 +170,8 @@ ul {
   align-items: center;
   padding: 200px 0;
 }
-h1 {
-  margin: 0 auto;
-}
 .slider__title {
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -208,9 +200,9 @@ h1 {
   line-height: 1.76;
 }
 
-.top-button:hover {
-  background-color: var(--color-blue-hover);
-  border-color: var(--color-blue-hover);
+.slider__button:hover {
+  background-color: red;
+  border-color: red;
 }
 
 .article {
@@ -506,7 +498,7 @@ h2 {
 
 /*-------------FOOTER CLASSES-------------*/
 .footer {
-  background-color: var(--color-navy);
+  background-color: var(--color-darkgrey);
   padding: 60px 15px;
 }
 .footer__container {
@@ -584,7 +576,7 @@ h4 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
-  background-color: var(--color-navy);
+  background-color: var(--color-darkgrey);
   color: var(--color-white);
 }
 
@@ -611,7 +603,9 @@ h4 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, background-color;
 }
-
+.footer__logo:visited {
+  color: var(--color-white);
+}
 /*-------------OKNO MODALNE = BACKDROP-------------*/
 .modal {
   position: fixed;
