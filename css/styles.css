@@ -201,8 +201,8 @@ ul {
 }
 
 .slider__button:hover {
-  background-color: red;
-  border-color: red;
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
 }
 
 .article {
@@ -357,7 +357,7 @@ h2 {
   cursor: pointer;
 }
 .team__icon:focus {
-  background-color: pink;
+  background-color: var(--color-blue);
 }
 
 .client {
@@ -424,12 +424,12 @@ h2 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button:hover {
+/* .button:hover {
   color: var(--color-white);
   background-color: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 .portfolio__list {
   display: flex;

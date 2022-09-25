@@ -1,0 +1,25 @@
+.offer {
+  padding: 94px 0;
+  margin: 0 auto;
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    &_list > li {
+      display: flex;
+      position: relative;
+    }
+  }
+  &__label {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    padding: 27px;
+    text-align: center;
+    margin: 0;
+  }
+}

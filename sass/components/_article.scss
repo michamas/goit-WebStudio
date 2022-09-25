@@ -1,0 +1,39 @@
+.article {
+  width: 1200px;
+  margin: auto;
+  %__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 94px 0 0 0;
+    & > li:nth-child(-n + 3) {
+      margin-right: 30px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    color: getColor("lightGrey");
+    height: 75px;
+    width: 270px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+  &__icons {
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background: getColor("ash");
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
