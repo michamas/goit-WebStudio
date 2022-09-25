@@ -40,15 +40,11 @@ ul {
 }
 
 /*-------------HEADER CLASSES-------------*/
-.header__background--white {
+.header {
   background-color: var(--color-white);
   border-bottom: 1px solid #ececec;
 }
 
-/* .section {
-  width: 1200px;
-  margin: 0 auto;
-} */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -121,9 +117,9 @@ ul {
 .navbar__link.active {
   color: var(--color-blue);
 }
-.active::after {
+.navbar__link--active::after {
   position: absolute;
-  top: 63px;
+  top: 62px;
   left: 0px;
   content: "";
   border-radius: 2px;
@@ -161,6 +157,10 @@ ul {
 /* .padding {
   padding: 94px 0px;
 } */
+.slider {
+  background: var(--color-navy);
+  margin: 0 auto;
+}
 .slider__container {
   background-image: linear-gradient(
       0deg,
@@ -176,10 +176,6 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 200px 0;
-}
-.slider {
-  background: var(--color-navy);
-  margin: 0 auto;
 }
 h1 {
   margin: 0 auto;
@@ -269,7 +265,7 @@ h2 {
 }
 
 .offer {
-  padding: 94px 0 0 0;
+  padding: 94px 0;
   margin: 0 auto;
 }
 
@@ -280,13 +276,6 @@ h2 {
   padding: 0;
   margin: 0;
 }
-/* .container__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
-} */
 .offer__list > li {
   display: flex;
   /* display flex załatwia sprawę małego odstępu pomiędzy zdjęciem  a podpisem  */
@@ -305,7 +294,10 @@ h2 {
 }
 
 .team {
-  padding: 94px 0 0 0;
+  padding: 94px 0;
+}
+
+.team--gray {
   background-color: var(--color-ash);
 }
 
