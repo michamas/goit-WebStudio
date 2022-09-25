@@ -96,7 +96,7 @@ ul {
   color: var(--color-black);
 }
 
-.contact {
+.contact__container {
   display: flex;
 }
 .contact__link {
@@ -158,9 +158,9 @@ ul {
 }
 
 /*-------------MAIN CLASSES-------------*/
-.padding {
+/* .padding {
   padding: 94px 0px;
-}
+} */
 .slider__container {
   background-image: linear-gradient(
       0deg,
@@ -227,7 +227,7 @@ h1 {
   justify-content: center;
   flex-direction: row;
   margin: 0 auto;
-  padding-bottom: 0;
+  padding: 94px 0 0 0;
 }
 
 .article__list > li:nth-child(-n + 3) {
@@ -269,6 +269,7 @@ h2 {
 }
 
 .offer {
+  padding: 94px 0 0 0;
   margin: 0 auto;
 }
 
@@ -304,6 +305,7 @@ h2 {
 }
 
 .team {
+  padding: 94px 0 0 0;
   background-color: var(--color-ash);
 }
 
@@ -378,6 +380,7 @@ h2 {
 .client {
   width: 1200px;
   margin: 0 auto;
+  padding: 94px 0;
 }
 
 .client__list {
@@ -411,6 +414,7 @@ h2 {
 .portfolio {
   width: 1200px;
   margin: 0 auto;
+  padding: 94px 0;
 }
 
 .portfolio__button {
