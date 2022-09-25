@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 27px 16px 15px;
+  width: 1200px;
+  margin: 0 auto;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    line-height: 1.14;
+    color: getColor("black");
+    font-weight: 500;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    padding: 16px;
+    margin: 0 4px;
+    position: relative;
+  }
+}

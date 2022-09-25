@@ -1,0 +1,20 @@
+// COLORS
+$colors: (
+  "white":#ffffff,
+  "black":#000000,
+  "active": #2196f3,
+  "activeHover":#1971b8,
+  "background":#e5e5e5,
+  "almostBlack": #212121,
+  "navy": #2f303a,
+  "ash":#f5f4fa,
+  "lightGrey":#757575,
+  "iconLight":#afb1b8,
+  "iconDark":#ffffff1a,
+  "borderHeader": #ececec,
+);
+
+
+@function getColor($key) {
+    @return map-get($colors, $key );
+}

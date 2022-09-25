@@ -14,7 +14,7 @@
   --color-almostblack: #212121;
   --color-black: #000000;
   --color-icon-grey: #afb1b8;
-  --color-icon-dark: rgba(255, 255, 255, 0.1);
+  --color-icon-dark: #ffffff1a;
 }
 
 * {
@@ -53,25 +53,6 @@ ul {
   width: 1200px;
   margin: 0 auto;
 }
-
-.logo {
-  font-weight: 700;
-  font-size: 26px;
-  text-decoration: none;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  margin-right: 77px;
-  color: var(--color-black);
-}
-
-.navbar__logo:visited {
-  color: var(--color-black);
-}
-
-.footer__logo:visited {
-  color: var(--color-white);
-}
-
 .navbar__container {
   display: flex;
   align-items: center;
@@ -90,6 +71,24 @@ ul {
 }
 .navbar__logo {
   color: var(--color-black);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 77px;
+  color: var(--color-black);
+}
+
+.navbar__logo:visited {
+  color: var(--color-black);
+}
+
+.footer__logo:visited {
+  color: var(--color-white);
 }
 
 .contact__container {
