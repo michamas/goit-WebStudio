@@ -726,9 +726,9 @@ h4 {
   fill: var(--color-blue);
 }
 
-.modal__label:hover {
+/* .modal__label:hover {
   fill: var(--color-blue);
-}
+} */
 
 .modal__button {
   display: block;

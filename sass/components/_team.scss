@@ -1,6 +1,6 @@
 .team {
   padding: 94px 0;
-  &--grey {
+  &--gray {
     background-color: getColor("ash");
   }
   &__container {
@@ -46,7 +46,7 @@
     padding-bottom: 30px;
     background-color: getColor("white");
   }
-  &_icon {
+  &__icon {
     fill: getColor("iconLight");
     border-radius: 50%;
     width: 44px;
@@ -55,13 +55,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill, background-color;
-    &__icon:hover {
+    &:hover {
       fill: getColor("white");
       background-color: getColor("active");
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       cursor: pointer;
     }
-    &__icon:focus {
+    &:focus {
       background-color: getColor("active");
     }
   }

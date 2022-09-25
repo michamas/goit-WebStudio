@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   color: getColor("black");
-  background: getColor("background");
+  background: getColor("white");
   justify-content: center;
   margin: 0 auto;
   letter-spacing: 0.02em;
@@ -29,5 +29,15 @@ h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: getColor("white");
+}
+
+#accept-policy {
+  cursor: pointer;
+}
+.is-hidden {
+  opacity: 50%;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out, visibility 300ms linear;
 }

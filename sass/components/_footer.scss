@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--color-darkgrey);
+  background-color: getColor("darkGrey");
   padding: 60px 15px;
   &__container {
     display: flex;
@@ -9,9 +9,9 @@
     margin: 0 auto;
   }
   &__logo {
-    color: var(--color-white);
+    color: getColor("white");
     &:visited {
-      color: var(--color-white);
+      color: getColor("white");
     }
   }
   &__media {
@@ -20,9 +20,9 @@
     gap: 10px;
   }
   &__icon {
-    fill: var(--color-white);
+    fill: getColor("white");
     border-radius: 50%;
-    background-color: var(--color-icon-dark);
+    background-color: getColor("iconDark");
     width: 44px;
     height: 44px;
     border: none;
@@ -30,8 +30,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill, background-color;
     &:hover {
-      fill: var(--color-white);
-      background-color: var(--color-blue);
+      fill: getColor("white");
+      background-color: getColor("active");
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       cursor: pointer;
     }
@@ -51,8 +51,8 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
       padding-left: 16px;
-      background-color: var(--color-darkgrey);
-      color: var(--color-white);
+      background-color: getColor("darkGrey");
+      color: getColor("white");
     }
     &__button {
       display: flex;
@@ -64,13 +64,13 @@
       font-size: 16px;
       line-height: 1.88;
       &:hover {
-        background-color: var(--color-blue-hover);
-        border-color: var(--color-blue-hover);
+        background-color: getColor("activeHover");
+        border-color: getColor("activeHover");
       }
       &--icon {
         width: 24px;
         height: 24px;
-        fill: var(--color-white);
+        fill: getColor("white");
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: fill, background-color;

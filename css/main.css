@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   color: #000000;
-  background: #e5e5e5;
+  background: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -34,6 +34,18 @@ h4 {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+#accept-policy {
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 50%;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity 300ms ease-in-out, visibility 300ms linear;
+  transition: opacity 300ms ease-in-out, visibility 300ms linear;
 }
 
 .header {
@@ -102,6 +114,19 @@ h4 {
   background-color: #2196f3;
 }
 .navbar__link--active:visited {
+  color: #2196f3;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 77px;
+  color: #000000;
+}
+.logo__text--blue {
   color: #2196f3;
 }
 
@@ -205,7 +230,7 @@ h4 {
 .button {
   width: 200px;
   height: 50px;
-  color: #2196f3;
+  color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -223,6 +248,23 @@ h4 {
 .article {
   width: 1200px;
   margin: auto;
+}
+.article__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  padding: 94px 0 0 0;
+}
+.article__list > li:nth-child(-n+3) {
+  margin-right: 30px;
 }
 .article__title {
   font-weight: 700;
@@ -271,7 +313,7 @@ h4 {
   padding: 0;
   margin: 0;
 }
-.offer__list_list > li {
+.offer__list > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,7 +333,7 @@ h4 {
 .team {
   padding: 94px 0;
 }
-.team--grey {
+.team--gray {
   background-color: #f5f4fa;
 }
 .team__container {
@@ -357,7 +399,7 @@ h4 {
   padding-bottom: 30px;
   background-color: #ffffff;
 }
-.team_icon {
+.team__icon {
   fill: #afb1b8;
   border-radius: 50%;
   width: 44px;
@@ -370,14 +412,14 @@ h4 {
   -webkit-transition-property: fill, background-color;
   transition-property: fill, background-color;
 }
-.team_icon__icon:hover {
+.team__icon:hover {
   fill: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
-.team_icon__icon:focus {
+.team__icon:focus {
   background-color: #2196f3;
 }
 
@@ -420,7 +462,7 @@ h4 {
 }
 
 .footer {
-  background-color: var(--color-darkgrey);
+  background-color: #2f303a;
   padding: 60px 15px;
 }
 .footer__container {
@@ -435,10 +477,10 @@ h4 {
   margin: 0 auto;
 }
 .footer__logo {
-  color: var(--color-white);
+  color: #ffffff;
 }
 .footer__logo:visited {
-  color: var(--color-white);
+  color: #ffffff;
 }
 .footer__media {
   display: -webkit-box;
@@ -450,9 +492,9 @@ h4 {
   gap: 10px;
 }
 .footer__icon {
-  fill: var(--color-white);
+  fill: #ffffff;
   border-radius: 50%;
-  background-color: var(--color-icon-dark);
+  background-color: rgba(255, 255, 255, 0.1019607843);
   width: 44px;
   height: 44px;
   border: none;
@@ -464,8 +506,8 @@ h4 {
   transition-property: fill, background-color;
 }
 .footer__icon:hover {
-  fill: var(--color-white);
-  background-color: var(--color-blue);
+  fill: #ffffff;
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -488,8 +530,8 @@ h4 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
-  background-color: var(--color-darkgrey);
-  color: var(--color-white);
+  background-color: #2f303a;
+  color: #ffffff;
 }
 .footer-form__button {
   display: -webkit-box;
@@ -508,17 +550,171 @@ h4 {
   line-height: 1.88;
 }
 .footer-form__button:hover {
-  background-color: var(--color-blue-hover);
-  border-color: var(--color-blue-hover);
+  background-color: #1971b8;
+  border-color: #1971b8;
 }
 .footer-form__button--icon {
   width: 24px;
   height: 24px;
-  fill: var(--color-white);
+  fill: #ffffff;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: fill, background-color;
   transition-property: fill, background-color;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -webkit-transition: opacity 300ms ease-in-out, visibility 300ms linear;
+  transition: opacity 300ms ease-in-out, visibility 300ms linear;
+}
+.modal__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 528px;
+  /* height: 581px; */
+  background-color: #ffffff;
+  padding: 40px;
+}
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+}
+.modal__close-btn--icon {
+  height: 18px;
+  width: 18px;
+}
+.modal__close-btn:hover {
+  border-color: #1971b8;
+  fill: #2196f3;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: #212121;
+}
+.modal__label {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #757575;
+  margin-top: 10px;
+}
+.modal__label:hover > .modal__icon {
+  fill: #2196f3;
+}
+.modal__textarea {
+  display: block;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+}
+.modal__textarea:hover, .modal__textarea:focus {
+  border-color: #2196f3;
+  outline: none;
+  fill: #2196f3;
+}
+.modal__icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: #212121;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding-left: 40px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color, fill;
+  transition-property: border-color, fill;
+}
+.modal__input:focus, .modal__input:hover {
+  border-color: #2196f3;
+  outline: none;
+  fill: #2196f3;
+}
+.modal__button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.modal__button:hover {
+  background-color: #1971b8;
+  border-color: #1971b8;
+}
+.modal__link {
+  text-decoration: none;
+  line-height: 1.14;
+  font-weight: 500;
+  color: #2196f3;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: color;
+  transition-property: color;
+  cursor: pointer;
+}
+.modal__link:visited {
+  color: #2196f3;
+}
+.modal__link:hover {
+  color: #1971b8;
 }/*# sourceMappingURL=main.css.map */

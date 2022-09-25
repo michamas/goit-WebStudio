@@ -1,0 +1,138 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: opacity 300ms ease-in-out, visibility 300ms linear;
+  &__container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    /* height: 581px; */
+    background-color: getColor("white");
+    padding: 40px;
+  }
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: getColor("white");
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color;
+    &--icon {
+      height: 18px;
+      width: 18px;
+    }
+    &:hover {
+      border-color: getColor("activeHover");
+      fill: getColor("active");
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: getColor("almostBlack");
+  }
+  &__label {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: getColor("lightGrey");
+    margin-top: 10px;
+    &:hover > .modal__icon {
+      fill: getColor("active");
+    }
+  }
+  &__textarea {
+    display: block;
+    resize: none;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color;
+    &:hover,
+    &:focus {
+      border-color: getColor("active");
+      outline: none;
+      fill: getColor("active");
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    fill: getColor("almostBlack");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+  }
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 40px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color, fill;
+    &:focus,
+    &:hover {
+      border-color: getColor("active");
+      outline: none;
+      fill: getColor("active");
+    }
+  }
+  &__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    &:hover {
+      background-color: getColor("activeHover");
+      border-color: getColor("activeHover");
+    }
+  }
+  &__link {
+    text-decoration: none;
+    line-height: 1.14;
+    font-weight: 500;
+    color: getColor("active");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    cursor: pointer;
+    &:visited {
+      color: getColor("active");
+    }
+    &:hover {
+      color: getColor("activeHover");
+    }
+  }
+}
