@@ -1,0 +1,25 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: getColor("white");
+  font-style: normal;
+  margin-top: 20px;
+  &__link {
+    color: getColor("lightGrey");
+    text-decoration: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:visited {
+      color: getColor("black");
+    }
+    &:hover {
+      color: getColor("active");
+      border: getColor("active");
+      border-radius: 2px;
+    }
+  }
+}

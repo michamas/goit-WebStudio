@@ -424,12 +424,6 @@ h2 {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/* .button:hover {
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
 
 .portfolio__list {
   display: flex;
@@ -442,6 +436,17 @@ h2 {
   gap: 30px;
   margin-top: 34px;
 }
+
+.portfolio__grid-border:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.portfolio__figure {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
 .figure__figcaption {
   display: flex;
   flex-direction: column;
@@ -453,17 +458,6 @@ h2 {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-}
-
-.portfolio__grid-border:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
-.portfolio__figure {
-  display: flex;
-  flex-direction: column;
-  /* position: relative; */
 }
 
 .figure__overlay {

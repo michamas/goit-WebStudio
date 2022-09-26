@@ -1,0 +1,10 @@
+// FONTS
+$fonts: (
+  "primary": "Roboto",
+  "secondary": "Raleway",
+  "type": sans-serif,
+);
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

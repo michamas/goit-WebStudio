@@ -1,9 +1,10 @@
 // @import - powoli wychodzi z mody
 // @use -
 
-@import "./utils/variables";
-@import "./components/base";
-@import "./components/header";
+@import "./utils/_fonts";
+@import "./utils/_variables";
+@import "./components/_base";
+@import "./components/_header";
 @import "./components/_navbar";
 @import "./components/_logo";
 @import "./components/_contact";
@@ -15,3 +16,6 @@
 @import "./components/_client";
 @import "./components/_footer";
 @import "./components/_modal";
+@import "./components/_portfolio";
+@import "./components/_figure";
+@import "./components/_address";

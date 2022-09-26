@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: getFont("primary"), getFont("secondary"), getFont("type");
   font-size: 14px;
   color: getColor("black");
   background: getColor("white");
