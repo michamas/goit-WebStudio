@@ -36,7 +36,7 @@ ul {
 }
 
 /*-------------HEADER CLASSES-------------*/
-.header {
+.header__container {
   background-color: var(--color-white);
   border-bottom: 1px solid #ececec;
 }

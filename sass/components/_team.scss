@@ -1,14 +1,11 @@
 .team {
   padding: 94px 0;
-  &--gray {
-    background-color: getColor("ash");
-  }
+  background-color: getColor("ash");
   &__container {
     width: 1200px;
     margin: auto;
   }
-  &__list {
-    display: flex;
+  &__list {    display: flex;
     justify-content: center;
     gap: 30px;
     padding: 0;

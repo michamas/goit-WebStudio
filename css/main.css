@@ -48,7 +48,7 @@ h4 {
   transition: opacity 300ms ease-in-out, visibility 300ms linear;
 }
 
-.header {
+.header__container {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -332,8 +332,6 @@ h4 {
 
 .team {
   padding: 94px 0;
-}
-.team--gray {
   background-color: #f5f4fa;
 }
 .team__container {
