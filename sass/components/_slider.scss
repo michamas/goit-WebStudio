@@ -1,3 +1,4 @@
+// MOBILE FIRST
 .slider {
   background: getColor("darkGrey");
   margin: 0 auto;
@@ -7,8 +8,9 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/agencja/background.png");
+      url("../images/agencja/background@2x.jpg");
     max-width: 1600px;
+    min-width: 320px;
     margin: auto;
     padding: 200px 252px 200px 252px;
     display: flex;
@@ -20,10 +22,11 @@
   &__title {
     margin: 0 auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
     color: getColor("white");
   }
   &__button {
@@ -33,6 +36,53 @@
     &:hover {
       background-color: getColor("activeHover");
       border-color: getColor("activeHover");
+    }
+  }
+}
+// TABLET
+@media (min-width: 768px) {
+}
+
+// DESKTOP (OLD CODE)
+@media (min-width: 1200px) {
+  .slider {
+    background: getColor("darkGrey");
+    margin: 0 auto;
+    &__container {
+      background-image: linear-gradient(
+          0deg,
+          rgba(47, 48, 58, 0.4) 0%,
+          rgba(47, 48, 58, 0.4) 100%
+        ),
+        url("../images/agencja/background.jpg");
+      max-width: 1600px;
+      min-width: 320px;
+      margin: auto;
+      padding: 200px 252px 200px 252px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 200px 0;
+    }
+    &__title {
+      margin: 0 auto;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.6;
+      letter-spacing: 0.06em;
+      text-align: center;
+      text-transform: uppercase;
+      color: getColor("white");
+    }
+    &__button {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.76;
+      &:hover {
+        background-color: getColor("activeHover");
+        border-color: getColor("activeHover");
+      }
     }
   }
 }

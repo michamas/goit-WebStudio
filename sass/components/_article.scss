@@ -1,15 +1,15 @@
+// MOBILE FIRST
 .article {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 320px;
   margin: auto;
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    flex-direction: row;
     margin: 0 auto;
     padding: 94px 0 0 0;
-    & > li:nth-child(-n + 3) {
-      margin-right: 30px;
-    }
   }
   &__title {
     font-weight: 700;
@@ -17,23 +17,48 @@
     letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__paragraph {
     color: getColor("lightGrey");
     height: 75px;
-    width: 270px;
+    max-width: 450px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin: 0;
   }
   &__icons {
     border-radius: 4px;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background: getColor("ash");
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .article {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .article {
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 0 auto;
+      padding: 94px 0 0 0;
+      & > li:nth-child(-n + 3) {
+        margin-right: 30px;
+      }
+    }
   }
 }
