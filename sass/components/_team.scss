@@ -1,11 +1,15 @@
+// MOBILE FIRST
 .team {
   padding: 94px 0;
   background-color: getColor("ash");
   &__container {
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 320px;
     margin: auto;
   }
-  &__list {    display: flex;
+  &__list {    
+    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
     gap: 30px;
     padding: 0;
@@ -60,6 +64,79 @@
     }
     &:focus {
       background-color: getColor("active");
+    }
+  }
+}
+
+// // TABLET
+// @media (min-width: 768px) {
+// }
+
+// DESKTOP (OLD CODE)
+@media (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+    background-color: getColor("ash");
+    &__container {
+      width: 1200px;
+      margin: auto;
+    }
+    &__list {    display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+      color: getColor("lightGrey");
+      font-size: 16px;
+    }
+    &__figure {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      overflow: auto;
+    }
+    &__figcaption {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 16px;
+      gap: 10px;
+      padding-top: 30px;
+      background: getColor("white");
+      &--bold {
+        font-weight: 500;
+        line-height: 1.19;
+        color: getColor("black");
+      }
+    }
+    &__media {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding-top: 16px;
+      padding-bottom: 30px;
+      background-color: getColor("white");
+    }
+    &__icon {
+      fill: getColor("iconLight");
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      border: none;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: fill, background-color;
+      &:hover {
+        fill: getColor("white");
+        background-color: getColor("active");
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+      }
+      &:focus {
+        background-color: getColor("active");
+      }
     }
   }
 }

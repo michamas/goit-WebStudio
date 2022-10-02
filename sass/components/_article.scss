@@ -3,6 +3,9 @@
   max-width: 1200px;
   min-width: 320px;
   margin: auto;
+  // &__container{
+  //   margin: 0 auto;
+  // }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -29,10 +32,10 @@
   }
   &__icons {
     border-radius: 4px;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background: getColor("ash");
-    margin-bottom: 30px;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;

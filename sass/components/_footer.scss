@@ -1,3 +1,105 @@
+// MOBILE FIRST
+.footer {
+  background-color: getColor("darkGrey");
+  padding: 60px 15px;
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__logo {
+    margin: auto;
+    color: getColor("white");
+    &:visited {
+      color: getColor("white");
+    }
+  }
+  &__media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__icon {
+    fill: getColor("white");
+    border-radius: 50%;
+    background-color: getColor("iconDark");
+    width: 44px;
+    height: 44px;
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, background-color;
+    &:hover {
+      fill: getColor("white");
+      background-color: getColor("active");
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+    &:focus {
+      background-color: pink;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__newsletter {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      padding-left: 16px;
+      background-color: getColor("darkGrey");
+      color: getColor("white");
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 24px;
+      padding-left: 42px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      &:hover {
+        background-color: getColor("activeHover");
+        border-color: getColor("activeHover");
+      }
+      &--icon {
+        width: 24px;
+        height: 24px;
+        fill: getColor("white");
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: fill, background-color;
+      }
+    }
+  }
+}
+
+// // TABLET
+// @media (min-width: 768px) {
+// }
+
+// DESKTOP (OLD CODE)
+@media (min-width: 1200px) {
 .footer {
   background-color: getColor("darkGrey");
   padding: 60px 15px;
@@ -5,7 +107,8 @@
     display: flex;
     justify-content: flex-start;
     gap: 70px;
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 320px;
     margin: 0 auto;
   }
   &__logo {
@@ -77,4 +180,6 @@
       }
     }
   }
+}
+
 }

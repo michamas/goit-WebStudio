@@ -1,8 +1,10 @@
+// MOBILE FIRST
 .offer {
   padding: 94px 0;
   margin: 0 auto;
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding: 0;
@@ -23,3 +25,37 @@
     margin: 0;
   }
 }
+
+// // TABLET
+// @media (min-width: 768px) {
+// }
+
+// // DESKTOP (OLD CODE)
+// @media (min-width: 1200px) {
+// .offer {
+//   padding: 94px 0;
+//   margin: 0 auto;
+//   &__list {
+//     display: flex;
+//     justify-content: center;
+//     gap: 30px;
+//     padding: 0;
+//     margin: 0;
+//     & > li {
+//       display: flex;
+//       position: relative;
+//     }
+//   }
+//   &__label {
+//     position: absolute;
+//     bottom: 0;
+//     background: rgba(47, 48, 58, 0.8);
+//     width: 370px;
+//     height: 70px;
+//     padding: 27px;
+//     text-align: center;
+//     margin: 0;
+//   }
+// }
+
+// }
