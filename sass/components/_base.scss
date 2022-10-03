@@ -52,7 +52,9 @@ h4 {
   transition: opacity 300ms ease-in-out, visibility 300ms linear;
 }
 
-
+.is-open {
+  transform: translateX(0);
+}
 
 // // TABLET
 // @media (min-width: 768px) {
@@ -60,12 +62,12 @@ h4 {
 
 // // DESKTOP (OLD CODE)
 // @media (min-width: 1200px) {
-  // h2 {
-  //   font-weight: 700;
-  //   font-size: 36px;
-  //   line-height: 1.16;
-  //   margin: 0 0 50px 0;
-  //   text-align: center;
-  // }
-  
+// h2 {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.16;
+//   margin: 0 0 50px 0;
+//   text-align: center;
+// }
+
 // }

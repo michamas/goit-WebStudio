@@ -1,0 +1,16 @@
+// MOBILE FIRST AND ONLY
+.js-menu-container {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background-color: teal;
+    transform: translateX(-150%) rotate(360deg) scale(0.01);
+    transition: transform 1s;
+  }
+  .is-open {
+    transform: translateX(0) rotate(0) scale(1);
+  }
+  .js-close-menu,
+  .js-open-menu {
+    cursor: pointer;
+  }
