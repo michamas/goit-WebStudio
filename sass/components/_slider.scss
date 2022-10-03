@@ -9,6 +9,7 @@
         rgba(47, 48, 58, 0.4) 100%
       ),
       url("../images/agencja/background.jpg");
+      // background-size: 480px 400px;
     max-width: 1600px;
     min-width: 320px;
     margin: auto;
@@ -52,6 +53,7 @@
           rgba(47, 48, 58, 0.4) 100%
         ),
         url("../images/agencja/background@2x.jpg");
+
     }
   }
 }
@@ -85,8 +87,8 @@
     &__title {
       margin: 0 auto;
       font-weight: 900;
-      font-size: 26px;
-      line-height: 1.6;
+      font-size: 44px;
+      line-height: 1.36;
       letter-spacing: 0.06em;
       text-align: center;
       text-transform: uppercase;
