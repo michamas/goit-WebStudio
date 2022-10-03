@@ -105,9 +105,9 @@
     padding: 60px 15px;
     &__container {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       flex-wrap: nowrap;
-      gap: 70px;
+      // gap: 70px;
       // width: 1200px;
       margin: 0 auto;
     }
@@ -115,7 +115,6 @@
       display: flex;
       align-items: flex-start;
       flex-direction: column;
-
     }
     &__logo {
       margin: 0;
@@ -151,6 +150,10 @@
       }
     }
     &-form {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
       &__newsletter {
         display: flex;
         align-items: center;
