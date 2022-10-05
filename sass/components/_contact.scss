@@ -45,21 +45,23 @@
   .contact {
     &__container {
       display: flex;
+      flex-direction: column;
+      
     }
     &__link {
-      display: flex;
       justify-content: flex-start;
-      align-items: center;
       padding: 5px;
       margin: 0px;
     }
   }
 }
-// DESKTOP (OLD CODE)
+// // DESKTOP (OLD CODE)
 @media (min-width: 1200px) {
   .contact {
     &__container {
       display: flex;
+      flex-direction: row;
+
     }
     &__link {
       display: flex;

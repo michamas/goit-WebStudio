@@ -14,6 +14,7 @@
   &__box {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   &__logo {
@@ -50,12 +51,15 @@
   }
   &-form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     &__newsletter {
       display: flex;
       align-items: center;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       gap: 14px;
@@ -151,12 +155,14 @@
     }
     &-form {
       display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
       &__newsletter {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 14px;
       }
       &__input {

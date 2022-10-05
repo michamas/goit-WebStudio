@@ -2,10 +2,10 @@
 .article {
   max-width: 1200px;
   min-width: 320px;
-  margin: auto;
-  // &__container{
-  //   margin: 0 auto;
-  // }
+  // margin: auto;
+  &__container {
+    margin: 0 auto;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@
     max-width: 450px;
     height: 120px;
     background: getColor("ash");
-    margin: 0px  auto 30px;
+    margin: 0px auto 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,9 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
+      // flex-basis: calc((100%-30px)/2);
+      // max-width: 354px;
     }
   }
 }
@@ -61,6 +64,7 @@
       display: flex;
       justify-content: center;
       flex-direction: row;
+      flex-wrap: nowrap;
       margin: 0 auto;
       padding: 94px 0 0 0;
       & > li:nth-child(-n + 3) {
