@@ -1,36 +1,21 @@
 // MOBILE FIRST
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 15px;
-  max-width: 1200px;
-  min-width: 320px;
-  margin: 0 auto;
+  &--hidden {
+    display: none;
+  }
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 16px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  &__menu {
-    padding: 16px 10px;
-  }
-  &__button {
-    position: absolute;
-    top: 8px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    background-color: getColor("white");
-    border: none;
-    cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color;
-  }
-  &__icon {
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
   }
   &__link {
     text-decoration: none;
@@ -71,21 +56,34 @@
   }
 }
 
-// @media (min-width: 768px) {
-//   .navbar {
-//   }
-// }
+// TABLET
+@media (min-width: 768px) {
+  .navbar {
+    &--hidden {
+      display: flex;
+    }
+  }
+}
+
+// DESKTOP (OLD CODE)
 @media (min-width: 1200px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 15px;
-    width: 1200px;
-    margin: 0 auto;
+    &--hidden {
+      display: flex;
+    }
     &__container {
       display: flex;
+      justify-content: space-between;
       align-items: center;
+      padding: 16px 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
     }
     &__link {
       text-decoration: none;

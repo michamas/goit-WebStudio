@@ -24,48 +24,51 @@
   </head>
 
   <body>
-   
     <!-- NAGŁÓWEK -->
     <header class="header">
       <div class="header__container">
         <!-- LOGO STRONY -->
         <div class="navbar">
           <div class="navbar__container">
-            <a
-              href="index.html"
-              rel="noreferrer noopener"
-              class="navbar__logo logo"
-              ><span class="logo__text--blue">Web</span
-              ><span class="">Studio</span>
-            </a>
-
-            <!-- NAWIGACJA -->
-            <nav>
-              <a href="index.html" class="navbar__link navbar__link--active"
-                >Agencja
+            <div class="navbar__box">
+              <a
+                href="index.html"
+                rel="noreferrer noopener"
+                class="navbar__logo logo"
+                ><span class="logo__text--blue">Web</span
+                ><span class="">Studio</span>
               </a>
 
-              <a href="portfolio.html" class="navbar__link">Portfolio</a>
+              <!-- NAWIGACJA -->
 
-              <a href="" class="navbar__link">Kontakt</a>
-            </nav>
-          </div>
-          <!-- DANE DO KONTAKTU -->
-          <div class="contact">
-            <div class="contact__container">
-              <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+              <nav class="navbar--hidden">
+                <a href="index.html" class="navbar__link navbar__link--active"
+                  >Agencja
+                </a>
 
-              <a href="tel:+48111111111" class="contact__link">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
+                <a href="portfolio.html" class="navbar__link">Portfolio</a>
+
+                <a href="" class="navbar__link">Kontakt</a>
+              </nav>
+            </div>
+
+            <!-- DANE DO KONTAKTU -->
+            <div class="contact navbar--hidden">
+              <div class="contact__container">
+                <a href="mailto:info@devstudio.com" class="contact__link">
+                  <svg class="contact__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+
+                <a href="tel:+48111111111" class="contact__link">
+                  <svg class="contact__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -707,11 +710,11 @@
     </div>
 
     <!-- OKNO NAV MENU -->
-    <div class="js-menu-container">
+    <!-- <div class="js-menu-container">
       nasze menu
       <button type="button" class="js-close-menu">Close</button>
     </div>
-    <button type="button" class="navbar__button js-close-menu">
+    <button type="button" class="js-close-menu">
       <svg class="navbar__icon">
         <use
           href="./images/icons.svg#icon-menu"
@@ -721,10 +724,10 @@
           y="12"
         ></use>
       </svg>
-    </button>
+    </button> -->
+
     <!-- PODPIĘCIE SKRYPTU JAVASCRIPT -->
     <script src="./js/modal.js"></script>
-    <!-- PODPIĘCIE SKRYPTU JAVASCRIPT -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

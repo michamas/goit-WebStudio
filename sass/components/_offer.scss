@@ -2,6 +2,10 @@
 .offer {
   padding: 60px 0;
   margin: 0 auto;
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;

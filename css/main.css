@@ -48,17 +48,15 @@ h4 {
   transition: opacity 300ms ease-in-out, visibility 300ms linear;
 }
 
-.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 .header__container {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
-.navbar {
+.navbar--hidden {
+  display: none;
+}
+.navbar__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,40 +68,19 @@ h4 {
           align-items: center;
   padding: 16px 15px;
   max-width: 1200px;
-  min-width: 320px;
   margin: 0 auto;
 }
-.navbar__container {
+.navbar__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.navbar__menu {
-  padding: 16px 10px;
-}
-.navbar__button {
-  position: absolute;
-  top: 8px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border: none;
-  cursor: pointer;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
-}
-.navbar__icon {
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
 }
 .navbar__link {
   text-decoration: none;
@@ -147,8 +124,20 @@ h4 {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .navbar--hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media (min-width: 1200px) {
-  .navbar {
+  .navbar--hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,16 +148,20 @@ h4 {
         -ms-flex-align: center;
             align-items: center;
     padding: 16px 15px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
-  .navbar__container {
+  .navbar__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
   }
   .navbar__link {
     text-decoration: none;
@@ -277,6 +270,80 @@ h4 {
   fill: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+    margin: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    line-height: 1.14;
+    font-weight: 500;
+    padding: 16px;
+    margin: 0 4px;
+    color: #757575;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-property: color;
+    transition-property: color;
+  }
+  .contact__link:hover {
+    color: #2196f3;
+    border: #2196f3;
+    border-radius: 2px;
+  }
+  .contact__link:hover .contact__icon {
+    fill: #2196f3;
+  }
+  .contact__link:visited {
+    color: #757575;
+  }
+  .contact__icon {
+    fill: #757575;
+    margin-right: 10px;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-property: fill;
+    transition-property: fill;
+  }
+  .contact__icon:hover {
+    fill: #2196f3;
+  }
+}
 .slider {
   background: #2f303a;
   margin: 0 auto;
@@ -289,7 +356,6 @@ h4 {
   min-width: 320px;
   height: 400px;
   margin: auto;
-  padding: 200px 252px 200px 252px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +369,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 200px 0;
+  gap: 30px;
 }
 .slider__title {
   margin: 0 auto;
@@ -342,7 +408,6 @@ h4 {
     max-width: 1600px;
     min-width: 320px;
     margin: auto;
-    padding: 200px 252px 200px 252px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -356,7 +421,6 @@ h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 200px 0;
   }
   .slider__title {
     margin: 0 auto;
@@ -367,15 +431,6 @@ h4 {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-  }
-  .slider__button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.76;
-  }
-  .slider__button:hover {
-    background-color: #1971b8;
-    border-color: #1971b8;
   }
 }
 .button {
@@ -513,6 +568,10 @@ h4 {
 .offer {
   padding: 60px 0;
   margin: 0 auto;
+}
+.offer__container {
+  max-width: 1200px;
+  margin: auto;
 }
 .offer__list {
   display: -webkit-box;
@@ -654,7 +713,7 @@ h4 {
     background-color: #f5f4fa;
   }
   .team__container {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
   }
   .team .team__img {
@@ -1049,7 +1108,7 @@ h4 {
     gap: 14px;
   }
   .footer-form__input {
-    width: 358px;
+    width: 200px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
