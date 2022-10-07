@@ -1,9 +1,8 @@
 // MOBILE FIRST
 .article {
-  max-width: 1200px;
-  min-width: 320px;
-  // margin: auto;
   &__container {
+    max-width: 1200px;
+    min-width: 320px;
     margin: 0 auto;
   }
   &__list {
@@ -52,13 +51,20 @@
       // flex-basis: calc((100%-30px)/2);
       // max-width: 354px;
     }
+    &__paragraph {
+      max-width: 354px;
+
+    }
+    &__icons {
+      max-width: 354px;
+      height: 120px;
+    }
   }
 }
 
 // DESKTOP (OLD CODE)
 @media (min-width: 1200px) {
   .article {
-    width: 1200px;
     margin: auto;
     &__list {
       display: flex;
@@ -67,9 +73,6 @@
       flex-wrap: nowrap;
       margin: 0 auto;
       padding: 94px 0 0 0;
-      & > li:nth-child(-n + 3) {
-        margin-right: 30px;
-      }
     }
     &__title {
       font-weight: 700;

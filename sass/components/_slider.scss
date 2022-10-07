@@ -1,7 +1,6 @@
 // MOBILE FIRST
 .slider {
   background: getColor("darkGrey");
-  margin: 0 auto;
   &__container {
     background-image: linear-gradient(
         0deg,
@@ -60,13 +59,18 @@
 
 // TABLET
 @media (min-width: 768px) {
+  .slider {
+    &__container {
+      height: 400px;
+    }
+  }
 }
 
 // DESKTOP (OLD CODE)
 @media (min-width: 1200px) {
   .slider {
     background: getColor("darkGrey");
-    margin: 0 auto;
+    // margin: 0 auto;
     &__container {
       background-image: linear-gradient(
           0deg,
@@ -76,6 +80,7 @@
         url("../images/agencja/background.jpg");
       max-width: 1600px;
       min-width: 320px;
+      height: 600px;
       margin: auto;
       // padding: 200px 252px 200px 252px;
       display: flex;

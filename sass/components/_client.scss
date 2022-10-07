@@ -1,21 +1,23 @@
 // MOBILE FIRST
 .client {
-  max-width: 1200px;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 60px 0;
+  &__container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
   &__list {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0;
-    margin: 0;
-    align-items: center;
+    // padding: 0;
+    // margin: 0;
   }
   &__item {
     flex-basis: auto;
-    height: 92px;
+    // height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,10 +33,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill, border-color;
-    & use {
-      display: contents;
-      // padding: 52px 16px;
-    }
     &:hover {
       fill: getColor("active");
       background-color: getColor("white");
@@ -67,44 +65,48 @@
 // }
 
 // TABLET
-@media (min-width: 768px) {
-  .client {
-    &__icon {
-      width: 226px;
-      height: 92px;
-    }
-  }
-}
+// @media (min-width: 768px) {
+//   .client {
+//     &__icon {
+//       width: 226px;
+//       height: 92px;
+//     }
+//   }
+// }
 
-// DESKTOP (OLD CODE)
-@media (min-width: 1200px) {
-  .client {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 94px 0;
-    &__list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 0;
-      margin: 0;
-    }
-    &__icon {
-      fill: getColor("lightGrey");
-      width: 170px;
-      height: 92px;
-      border: 1px solid getColor("iconLight");
-      border-radius: 4px;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-property: fill, border-color;
-      &:hover {
-        fill: getColor("active");
-        background-color: getColor("white");
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-        border-color: getColor("active");
-      }
-    }
-  }
-}
+//DESKTOP (OLD CODE)
+// @media (min-width: 1200px) {
+//   .client {
+//     &__container {
+//       width: 1200px;
+//       margin: 0 auto;
+//       padding: 94px 0;
+//     }
+//     &__list {
+//       display: flex;
+//       justify-content: center;
+//       gap: 30px;
+//       padding: 0;
+//       margin: 0;
+//     }
+//     &__icon {
+//       display: flex;
+//       justify-content: center;
+//       fill: getColor("lightGrey");
+//       width: 170px;
+//       height: 92px;
+//       border: 1px solid getColor("iconLight");
+//       border-radius: 4px;
+//       transition-duration: 250ms;
+//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//       transition-property: fill, border-color;
+//       &:hover {
+//         fill: getColor("active");
+//         background-color: getColor("white");
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//         cursor: pointer;
+//         border-color: getColor("active");
+//       }
+//     }
+//   }
+// }
