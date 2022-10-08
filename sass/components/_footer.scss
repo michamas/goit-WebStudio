@@ -1,8 +1,8 @@
 // MOBILE FIRST
 .footer {
   background-color: getColor("darkGrey");
-  padding: 60px 15px;
   &__container {
+    padding: 60px 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -99,30 +99,39 @@
 }
 
 // // TABLET
-// @media (min-width: 768px) {
-// }
+@media (min-width: 768px) {
+  .footer {
+    &-form {
+      &__input {
+        width: 450px;
+        height: 50px;
+
+      }
+    }
+  }
+}
 
 // DESKTOP (OLD CODE)
 @media (min-width: 1200px) {
   .footer {
     background-color: getColor("darkGrey");
-    padding: 60px 15px;
     &__container {
+      padding: 60px 15px;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       flex-wrap: nowrap;
+      // align-items: flex-start;
       // gap: 70px;
       // width: 1200px;
       margin: 0 auto;
     }
     &__box {
-      display: flex;
       align-items: flex-start;
+      display: flex;
       flex-direction: column;
     }
     &__logo {
       margin: 0;
-
       color: getColor("white");
       &:visited {
         color: getColor("white");
@@ -166,7 +175,7 @@
         gap: 14px;
       }
       &__input {
-        width: 200px;
+        width: 3580px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;

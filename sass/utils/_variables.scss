@@ -18,47 +18,47 @@ $colors: (
   @return map-get($colors, $key);
 }
 
-//FONTS
-$font-weight: (
-  "normal": 400,
-  "medium": 500,
-  "bold": 700,
-  "bolder": 900,
-);
+// //FONTS
+// $font-weight: (
+//   "normal": 400,
+//   "medium": 500,
+//   "bold": 700,
+//   "bolder": 900,
+// );
 
-$font-size: (
-  "light": 12px,
-  "normal": 14px,
-  "bolder": 16px,
-  "overlay": 18px,
-  "h4": 20px,
-  "logo": 26px,
-  "h2": 36px,
-  "h1": 44px,
-);
+// $font-size: (
+//   "light": 12px,
+//   "normal": 14px,
+//   "bolder": 16px,
+//   "overlay": 18px,
+//   "h4": 20px,
+//   "logo": 26px,
+//   "h2": 36px,
+//   "h1": 44px,
+// );
 
-//help from friends
-//MIXINS
-@mixin flexcenter($direction) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
-}
-@mixin flexdirection($direction) {
-  display: flex;
-  flex-direction: $direction;
-}
-@mixin hover($background-color, $color) {
-  background-color: $background-color ;
-  color: $color ;
-}
-@mixin color ($color) {
-  color: $color;
-}
-@mixin positioncenter {
-  position: absolute;
-top: 50%;
-left: 50%;
-  transform: translate(-50%, -50%);
-}
+// //help from friends
+// //MIXINS
+// @mixin flexcenter($direction) {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: $direction;
+// }
+// @mixin flexdirection($direction) {
+//   display: flex;
+//   flex-direction: $direction;
+// }
+// @mixin hover($background-color, $color) {
+//   background-color: $background-color ;
+//   color: $color ;
+// }
+// @mixin color ($color) {
+//   color: $color;
+// }
+// @mixin positioncenter {
+//   position: absolute;
+// top: 50%;
+// left: 50%;
+//   transform: translate(-50%, -50%);
+// }
