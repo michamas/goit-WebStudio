@@ -12,6 +12,7 @@
     margin: 0 auto;
   }
   &__box {
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +53,6 @@
   &-form {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -105,7 +105,6 @@
       &__input {
         width: 450px;
         height: 50px;
-
       }
     }
   }
@@ -127,6 +126,7 @@
     }
     &__box {
       align-items: flex-start;
+      justify-content: flex-start;
       display: flex;
       flex-direction: column;
     }
@@ -162,48 +162,49 @@
         background-color: pink;
       }
     }
-    &-form {
+  }
+  .footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    &__newsletter {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       flex-direction: row;
-      &__newsletter {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
+      // align-items: flex-start;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 14px;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      padding-left: 16px;
+      background-color: getColor("darkGrey");
+      color: getColor("white");
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 24px;
+      padding-left: 42px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      &:hover {
+        background-color: getColor("activeHover");
+        border-color: getColor("activeHover");
       }
-      &__input {
-        width: 3580px;
-        height: 50px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 4px;
-        padding-left: 16px;
-        background-color: getColor("darkGrey");
-        color: getColor("white");
-      }
-      &__button {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 24px;
-        padding-left: 42px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        &:hover {
-          background-color: getColor("activeHover");
-          border-color: getColor("activeHover");
-        }
-        &--icon {
-          width: 24px;
-          height: 24px;
-          fill: getColor("white");
-          transition-duration: 250ms;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-property: fill, background-color;
-        }
+      &--icon {
+        width: 24px;
+        height: 24px;
+        fill: getColor("white");
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: fill, background-color;
       }
     }
   }

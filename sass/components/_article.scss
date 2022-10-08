@@ -12,6 +12,9 @@
     justify-content: center;
     margin: 0 auto;
     padding: 60px 0 0 0;
+    & li {
+      margin: 0 15px;
+    }
   }
   &__title {
     font-weight: 700;
@@ -48,12 +51,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      // flex-basis: calc((100%-30px)/2);
-      // max-width: 354px;
+      & li {
+        margin: 0px;
+      }
     }
     &__paragraph {
       max-width: 354px;
-
     }
     &__icons {
       max-width: 354px;

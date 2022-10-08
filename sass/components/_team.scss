@@ -16,6 +16,9 @@
     margin: 0;
     color: getColor("lightGrey");
     font-size: 16px;
+    & li {
+      margin: 0 15px;
+    }
   }
   &__figure {
     display: flex;
@@ -26,8 +29,9 @@
     overflow: auto;
   }
   &__img {
-    width: 450px;
-    height: 460px;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   &__figcaption {
     display: flex;
@@ -77,7 +81,7 @@
   .team {
     &__img {
       width: 354px;
-      height: 374px;
+      height: auto;
     }
   }
 }

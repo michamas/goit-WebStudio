@@ -68,7 +68,7 @@
 @media (min-width: 768px) {
   .client {
     &__list {
-      flex-basis: calc((100%-20px) / 3);
+      flex-basis: calc((100% - 20px) / 3);
     }
     &__icon {
       width: 226px;
@@ -95,6 +95,7 @@
     &__icon {
       display: flex;
       justify-content: center;
+      align-items: center;
       fill: getColor("lightGrey");
       width: 170px;
       height: 92px;
