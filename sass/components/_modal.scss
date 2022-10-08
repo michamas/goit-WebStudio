@@ -13,8 +13,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450 px;
-    /* height: 581px; */
+    width: calc(100% - 30px);
+    max-width: 450px;
     background-color: getColor("white");
     padding: 40px;
   }
@@ -62,7 +62,8 @@
   &__textarea {
     display: block;
     resize: none;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
