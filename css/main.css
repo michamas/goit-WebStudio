@@ -51,6 +51,7 @@ h4 {
 .header__container {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .navbar--hidden {
@@ -1780,5 +1781,50 @@ h4 {
     color: #2196f3;
     border: #2196f3;
     border-radius: 2px;
+  }
+}
+.js-menu--hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.js-menu-container {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: teal;
+  -webkit-transform: translateX(-150%) rotate(360deg) scale(0.01);
+          transform: translateX(-150%) rotate(360deg) scale(0.01);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+.js-menu__icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.is-open {
+  -webkit-transform: translateX(0) rotate(0) scale(1);
+          transform: translateX(0) rotate(0) scale(1);
+}
+
+.js-close-menu,
+.js-open-menu {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .js-menu {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .js-menu {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,9 @@
 // MOBILE FIRST AND ONLY
-.js-menu-container {
+.js-menu {
+  &--hidden {
+    display: flex;
+  }
+  &-container {
     width: 100%;
     position: fixed;
     height: 100%;
@@ -7,10 +11,35 @@
     transform: translateX(-150%) rotate(360deg) scale(0.01);
     transition: transform 1s;
   }
-  .is-open {
-    transform: translateX(0) rotate(0) scale(1);
+  &__icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
   }
-  .js-close-menu,
-  .js-open-menu {
-    cursor: pointer;
+  // &__navigation {
+
+  // }
+}
+.is-open {
+  transform: translateX(0) rotate(0) scale(1);
+}
+.js-close-menu,
+.js-open-menu {
+  cursor: pointer;
+}
+
+// TABLET
+@media (min-width: 768px) {
+  .js-menu {
+    display: none;
   }
+}
+
+// DESKTOP (OLD CODE)
+@media (min-width: 1200px) {
+  .js-menu {
+    display: none;
+  }
+}

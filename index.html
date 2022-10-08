@@ -710,21 +710,31 @@
     </div>
 
     <!-- OKNO NAV MENU -->
-    <div class="js-menu-container">
-      przykładowe menu
-      <button type="button" class="js-close-menu">Close</button>
+    <div class="js-menu js-menu--hidden">
+      <div class="js-menu-container">
+        <div class="js-menu__navigation">
+          <a href="index.html" class="js-menu__link js-menu__link--active"
+            >Agencja
+          </a>
+
+          <a href="portfolio.html" class="js-menu__link">Portfolio</a>
+
+          <a href="" class="js-menu__link">Kontakt</a>
+        </div>
+        <button type="button" class="js-close-menu">Close</button>
+      </div>
+      <button type="button" class="js-open-menu">
+        <svg class="js-menu__icon">
+          <use
+            href="./images/icons.svg#icon-menu"
+            width="24"
+            height="16"
+            x="8"
+            y="12"
+          ></use>
+        </svg>
+      </button>
     </div>
-    <button type="button" class="js-close-menu">
-      <svg class="navbar__icon">
-        <use
-          href="./images/icons.svg#icon-menu"
-          width="24"
-          height="16"
-          x="8"
-          y="12"
-        ></use>
-      </svg>
-    </button>
 
     <!-- PODPIĘCIE SKRYPTU JAVASCRIPT -->
     <script src="./js/modal.js"></script>
