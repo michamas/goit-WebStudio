@@ -108,6 +108,9 @@
         margin: 0;
         color: getColor("lightGrey");
         font-size: 16px;
+        & li {
+          margin: 0;
+        }
       }
       &__figure {
         display: flex;

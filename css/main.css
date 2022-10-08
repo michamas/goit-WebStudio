@@ -796,6 +796,9 @@ h4 {
     color: #757575;
     font-size: 16px;
   }
+  .team .team__list li {
+    margin: 0;
+  }
   .team .team__figure {
     display: -webkit-box;
     display: -ms-flexbox;
