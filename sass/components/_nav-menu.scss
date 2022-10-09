@@ -1,8 +1,6 @@
 // MOBILE FIRST
 .nav-menu {
-  &--hidden {
-    display: flex;
-  }
+  display: flex;
   &__container {
     position: fixed;
     left: 0;
