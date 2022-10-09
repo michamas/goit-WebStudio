@@ -906,6 +906,9 @@ h4 {
   fill: #757575;
   width: 210px;
   height: 92px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -958,6 +961,9 @@ h4 {
   .client__icon {
     width: 170px;
     height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .footer {
@@ -1324,7 +1330,6 @@ h4 {
   display: block;
   resize: none;
   width: 100%;
-  max-width: 400px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1479,7 +1484,7 @@ h4 {
   .modal__textarea {
     display: block;
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;

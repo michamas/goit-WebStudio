@@ -26,6 +26,7 @@
     fill: getColor("lightGrey");
     width: 210px;
     height: 92px;
+    align-items: center;
     margin: auto;
     display: flex;
     border: 1px solid getColor("iconLight");
@@ -93,24 +94,9 @@
       margin: 0;
     }
     &__icon {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // fill: getColor("lightGrey");
       width: 170px;
       height: 92px;
-      // border: 1px solid getColor("iconLight");
-      // border-radius: 4px;
-      // transition-duration: 250ms;
-      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      // transition-property: fill, border-color;
-      // &:hover {
-      //   fill: getColor("active");
-      //   background-color: getColor("white");
-      //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      //   cursor: pointer;
-      //   border-color: getColor("active");
-      // }
+      display: flex;
     }
   }
 }

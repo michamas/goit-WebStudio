@@ -63,7 +63,6 @@
     display: block;
     resize: none;
     width: 100%;
-    max-width: 400px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -208,7 +207,7 @@
     &__textarea {
       display: block;
       resize: none;
-      width: 448px;
+      width: 100%;
       height: 120px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
