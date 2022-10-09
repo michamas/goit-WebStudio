@@ -1,3 +1,4 @@
+// MOBILE FIRST
 .figure {
   &__figcaption {
     display: flex;
@@ -24,8 +25,16 @@
     &:hover .figure__text-overlay {
       transform: translate(0%, -100%);
     }
+    & img {
+      display: block;
+      max-width: 100%;
+      width: 450px;
+      height: auto;
+    }
   }
   &__text-overlay {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -33,11 +42,36 @@
     padding: 49px 45px 49px 24px;
     background: rgba(33, 150, 243, 0.9);
     position: absolute;
-    width: 370px;
+    width: 100%;
+    height: 100%;
     transform: translate(0%, 0%);
     overflow: hidden;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: transform;
+  }
+}
+
+// TABLET
+@media (min-width: 768px) {
+  .figure {
+    &__overlay {
+      & img {
+        width: 354px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// DESKTOP (OLD CODE)
+@media (min-width: 1200px) {
+}
+.figure {
+  &__overlay {
+    & img {
+      width: 370 px;
+      height: auto;
+    }
   }
 }

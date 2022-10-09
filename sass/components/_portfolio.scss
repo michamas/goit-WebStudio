@@ -1,13 +1,17 @@
+// MOBILE FIRST
 .portfolio {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 94px 0;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 15px;
+  }
   &__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
+    width: 125px;
     color: getColor("almostBlack");
     cursor: pointer;
     background-color: getColor("ash");
@@ -30,12 +34,16 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
   }
   &__grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    margin-top: 34px;
+    margin: 34px auto 0;
     &-border:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -46,5 +54,23 @@
     display: flex;
     flex-direction: column;
     /* position: relative; */
+  }
+}
+// TABLET
+@media (min-width: 768px) {
+  .portfolio {
+    &__list {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+}
+
+// DESKTOP (OLD CODE)
+@media (min-width: 1200px) {
+  .portoflio {
+    &__container {
+      padding: 94px 15px;
+    }
   }
 }

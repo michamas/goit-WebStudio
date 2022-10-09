@@ -1094,7 +1094,7 @@ h4 {
   gap: 14px;
 }
 .footer-form__input {
-  width: 358px;
+  width: 290px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1590,10 +1590,10 @@ h4 {
     color: #1971b8;
   }
 }
-.portfolio {
+.portfolio__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 94px 0;
+  padding: 60px 15px;
 }
 .portfolio__button {
   font-weight: 500;
@@ -1601,6 +1601,7 @@ h4 {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  width: 125px;
   color: #212121;
   cursor: pointer;
   background-color: #f5f4fa;
@@ -1631,6 +1632,12 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
 }
 .portfolio__grid {
   display: -webkit-box;
@@ -1638,8 +1645,11 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
-  margin-top: 34px;
+  margin: 34px auto 0;
 }
 .portfolio__grid-border:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1657,6 +1667,20 @@ h4 {
   /* position: relative; */
 }
 
+@media (min-width: 768px) {
+  .portfolio__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .portoflio__container {
+    padding: 94px 15px;
+  }
+}
 .figure__figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1689,7 +1713,19 @@ h4 {
   -webkit-transform: translate(0%, -100%);
           transform: translate(0%, -100%);
 }
+.figure__overlay img {
+  display: block;
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+}
 .figure__text-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1697,7 +1733,8 @@ h4 {
   padding: 49px 45px 49px 24px;
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
-  width: 370px;
+  width: 100%;
+  height: 100%;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   overflow: hidden;
@@ -1709,6 +1746,17 @@ h4 {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+}
+
+@media (min-width: 768px) {
+  .figure__overlay img {
+    width: 354px;
+    height: auto;
+  }
+}
+.figure__overlay img {
+  width: 370 px;
+  height: auto;
 }
 
 .address {
@@ -1787,18 +1835,19 @@ h4 {
     border-radius: 2px;
   }
 }
-.js-menu--hidden {
+.nav-menu--hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.js-menu-container {
+.nav-menu__container {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   padding: 48px 40px;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1815,7 +1864,7 @@ h4 {
   -webkit-transition: opacity 300ms ease-in-out, visibility 300ms linear;
   transition: opacity 300ms ease-in-out, visibility 300ms linear;
 }
-.js-menu__navigation {
+.nav-menu__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1826,7 +1875,7 @@ h4 {
   gap: 32px;
   z-index: 10;
 }
-.js-menu__navigation-link {
+.nav-menu__navigation-link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1836,16 +1885,16 @@ h4 {
   text-decoration: none;
   color: #000000;
 }
-.js-menu__navigation-link:visited {
+.nav-menu__navigation-link:visited {
   color: #000000;
 }
-.js-menu__navigation-link:hover {
+.nav-menu__navigation-link:hover {
   color: #2196f3;
 }
-.js-menu__navigation-link--active {
+.nav-menu__navigation-link--active {
   color: #2196f3;
 }
-.js-menu__box {
+.nav-menu__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1855,7 +1904,7 @@ h4 {
           flex-direction: column;
   gap: 64px;
 }
-.js-menu__contact {
+.nav-menu__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1865,7 +1914,7 @@ h4 {
           flex-direction: column;
   gap: 32px;
 }
-.js-menu__contact-link {
+.nav-menu__contact-link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1874,16 +1923,18 @@ h4 {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.js-menu__media {
+.nav-menu__media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
 }
-.js-menu__media-link {
+.nav-menu__media-link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -1893,31 +1944,28 @@ h4 {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.js-menu__media-link:nth-child(-n+3) {
+.nav-menu__media-link:nth-child(-n+3) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 }
-
-.is-open {
-  -webkit-transform: translateX(0) rotate(0) scale(1);
-          transform: translateX(0) rotate(0) scale(1);
-}
-
-.js-close-menu {
+.nav-menu__button--close {
   position: absolute;
   right: 30px;
   top: 30px;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: pointer;
   background: rgb(255, 255, 255);
 }
-.js-close-menu__icon {
+.nav-menu__button--open {
+  cursor: pointer;
+}
+.nav-menu__icon--close {
   height: 20px;
   width: 20px;
 }
-
-.js-open-menu__icon {
+.nav-menu__icon--open {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -1925,18 +1973,18 @@ h4 {
   width: 40px;
 }
 
-.js-close-menu,
-.js-open-menu {
-  cursor: pointer;
+.is-open {
+  -webkit-transform: translateX(0) rotate(0) scale(1);
+          transform: translateX(0) rotate(0) scale(1);
 }
 
 @media (min-width: 768px) {
-  .js-menu {
+  .nav-menu {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  .js-menu {
+  .nav-menu {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
