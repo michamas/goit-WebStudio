@@ -29,41 +29,47 @@
         <!-- LOGO STRONY -->
         <div class="navbar">
           <div class="navbar__container">
-            <a
-              href="index.html"
-              rel="noreferrer noopener"
-              class="navbar__logo logo"
-              ><span class="logo__text--blue">Web</span
-              ><span class="">Studio</span>
-            </a>
-
-            <!-- NAWIGACJA -->
-            <nav>
-              <a href="index.html" class="navbar__link">Agencja </a>
-
-              <a href="portfolio.html" class="navbar__link navbar__link--active"
-                >Portfolio</a
-              >
-
-              <a href="" class="navbar__link">Kontakt</a>
-            </nav>
-          </div>
-          <!-- DANE DO KONTAKTU -->
-          <div class="contact">
-            <div class="contact__container">
-              <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
+            <div class="navbar__box">
+              <a
+                href="index.html"
+                rel="noreferrer noopener"
+                class="navbar__logo logo"
+                ><span class="logo__text--blue">Web</span
+                ><span class="">Studio</span>
               </a>
 
-              <a href="tel:+48111111111" class="contact__link">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
+              <!-- NAWIGACJA -->
+
+              <nav class="navbar--hidden">
+                <a href="index.html" class="navbar__link">Agencja </a>
+
+                <a
+                  href="portfolio.html"
+                  class="navbar__link navbar__link--active"
+                  >Portfolio</a
+                >
+
+                <a href="" class="navbar__link">Kontakt</a>
+              </nav>
+            </div>
+
+            <!-- DANE DO KONTAKTU -->
+            <div class="contact navbar--hidden">
+              <div class="contact__container">
+                <a href="mailto:info@devstudio.com" class="contact__link">
+                  <svg class="contact__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+
+                <a href="tel:+48111111111" class="contact__link">
+                  <svg class="contact__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +48 111 111 111
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -311,7 +317,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__container">
-        <div>
+        <div class="footer__box">
           <a
             href="index.html"
             rel="noreferrer noopener"
@@ -329,7 +335,7 @@
             </a>
           </address>
         </div>
-        <div>
+        <div class="footer__box">
           <h4>DOŁĄCZ DO NAS</h4>
           <div class="footer__media">
             <svg class="footer__icon">
@@ -370,32 +376,99 @@
             </svg>
           </div>
         </div>
-        <div class="footer-form">
+        <div class="footer__box">
           <h4>zapisz się do newslettera</h4>
-          <form class="footer-form__newsletter" method="get" name="signupNews">
-            <label>
-              <input
-                class="footer-form__input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="footer-form__button button" type="submit">
-              <span>Zapisz się</span>
-              <svg class="footer-form__button--icon">
-                <use
-                  href="./images/icons.svg#icon-send"
-                  width="24"
-                  height="24"
-                  x="0"
-                  y="0"
-                ></use>
-              </svg>
-            </button>
-          </form>
+          <div class="footer-form">
+            <form
+              class="footer-form__newsletter"
+              method="get"
+              name="signupNews"
+            >
+              <label>
+                <input
+                  class="footer-form__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="button footer-form__button" type="submit">
+                <span>Zapisz się</span>
+                <svg class="footer-form__button--icon">
+                  <use
+                    href="./images/icons.svg#icon-send"
+                    width="24"
+                    height="24"
+                    x="0"
+                    y="0"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- OKNO NAV MENU -->
+    <!-- js-menu--hidden wrzuć poniżej-->
+    <div class="js-menu js-menu--hidden">
+      <div class="js-menu-container">
+        <button type="button" class="js-close-menu">
+          <svg class="js-close-menu__icon">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="20"
+              height="20"
+              x="0"
+              y="0"
+            ></use>
+          </svg>
+        </button>
+        <div class="js-menu__navigation">
+          <a
+            href="index.html"
+            class="js-menu__navigation-link js-menu__navigation-link--active"
+            >Agencja
+          </a>
+
+          <a href="portfolio.html" class="js-menu__navigation-link"
+            >Portfolio</a
+          >
+
+          <a href="" class="js-menu__navigation-link">Kontakt</a>
+        </div>
+        <div class="js-menu__box">
+          <div class="js-menu__contact">
+            <a href="mailto:info@devstudio.com" class="js-menu__contact-link">
+              info@devstudio.com
+            </a>
+
+            <a href="tel:+48111111111" class="js-menu__contact-link">
+              +48 111 111 111
+            </a>
+          </div>
+          <div class="js-menu__media">
+            <a href="" class="js-menu__media-link">Instagram</a>
+            <a href="" class="js-menu__media-link">Twitter</a>
+            <a href="" class="js-menu__media-link">Facebook</a>
+            <a href="" class="js-menu__media-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="js-open-menu">
+        <svg class="js-open-menu__icon">
+          <use
+            href="./images/icons.svg#icon-menu"
+            width="24"
+            height="16"
+            x="8"
+            y="12"
+          ></use>
+        </svg>
+      </button>
+    </div>
+
+
   </body>
 </html>

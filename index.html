@@ -710,22 +710,54 @@
     </div>
 
     <!-- OKNO NAV MENU -->
-        <!-- js-menu--hidden wrzuć poniżej-->
+    <!-- js-menu--hidden wrzuć poniżej-->
     <div class="js-menu js-menu--hidden">
       <div class="js-menu-container">
+        <button type="button" class="js-close-menu">
+          <svg class="js-close-menu__icon">
+            <use
+              href="./images/icons.svg#icon-close"
+              width="20"
+              height="20"
+              x="0"
+              y="0"
+            ></use>
+          </svg>
+        </button>
         <div class="js-menu__navigation">
-          <a href="index.html" class="js-menu__link js-menu__link--active"
+          <a
+            href="index.html"
+            class="js-menu__navigation-link js-menu__navigation-link--active"
             >Agencja
           </a>
 
-          <a href="portfolio.html" class="js-menu__link">Portfolio</a>
+          <a href="portfolio.html" class="js-menu__navigation-link"
+            >Portfolio</a
+          >
 
-          <a href="" class="js-menu__link">Kontakt</a>
+          <a href="" class="js-menu__navigation-link">Kontakt</a>
         </div>
-        <button type="button" class="js-close-menu">Close</button>
+        <div class="js-menu__box">
+          <div class="js-menu__contact">
+            <a href="mailto:info@devstudio.com" class="js-menu__contact-link">
+              info@devstudio.com
+            </a>
+
+            <a href="tel:+48111111111" class="js-menu__contact-link">
+              +48 111 111 111
+            </a>
+          </div>
+          <div class="js-menu__media">
+            <a href="" class="js-menu__media-link">Instagram</a>
+            <a href="" class="js-menu__media-link">Twitter</a>
+            <a href="" class="js-menu__media-link">Facebook</a>
+            <a href="" class="js-menu__media-link">LinkedIn</a>
+          </div>
+        </div>
       </div>
+
       <button type="button" class="js-open-menu">
-        <svg class="js-menu__icon">
+        <svg class="js-open-menu__icon">
           <use
             href="./images/icons.svg#icon-menu"
             width="24"
