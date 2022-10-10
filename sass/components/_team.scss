@@ -29,7 +29,7 @@
     overflow: auto;
   }
   &__img {
-    display: block;
+    // display: block;
     max-width: 100%;
     height: auto;
   }
@@ -82,6 +82,11 @@
     &__img {
       width: 354px;
       height: auto;
+    }
+    &__list {
+      & li {
+        margin: 0;
+      }
     }
   }
 }

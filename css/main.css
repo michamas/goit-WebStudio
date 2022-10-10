@@ -703,7 +703,6 @@ h4 {
   overflow: auto;
 }
 .team__img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -768,6 +767,9 @@ h4 {
   .team__img {
     width: 354px;
     height: auto;
+  }
+  .team__list li {
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
