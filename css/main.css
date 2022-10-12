@@ -908,13 +908,7 @@ h4 {
   fill: #757575;
   width: 210px;
   height: 92px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-transition-duration: 250ms;
@@ -948,6 +942,19 @@ h4 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 94px 0;
+  }
+  .client__item {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .client__list {
     display: -webkit-box;

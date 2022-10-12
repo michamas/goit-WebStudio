@@ -26,9 +26,10 @@
     fill: getColor("lightGrey");
     width: 210px;
     height: 92px;
-    align-items: center;
     margin: auto;
-    display: flex;
+    // display: flex;
+    // align-items: center;
+    // align-items: center;
     border: 1px solid getColor("iconLight");
     border-radius: 4px;
     transition-duration: 250ms;
@@ -86,6 +87,13 @@
       margin: 0 auto;
       padding: 94px 0;
     }
+    &__item {
+      flex-basis: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
     &__list {
       display: flex;
       justify-content: center;
