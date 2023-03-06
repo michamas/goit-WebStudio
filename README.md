@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-https://michamas.github.io/goit-markup-hw-08/
+# GOIT HTML/CSS PROJECT
+That's a project of WebStudio website I did for GOIT course "Fullstack from scratch".
